@@ -1,0 +1,30 @@
+{
+  "total_filaments": 1325,
+  "unique_stems": 179,
+  "area_px": {
+    "mean": 1884.9,
+    "std": 2345.1,
+    "min": 116,
+    "p25": 610.0,
+    "median": 1091.0,
+    "p75": 2232.0,
+    "max": 23292
+  },
+  "aspect_ratio": {
+    "mean": 3.82,
+    "p25": 2.22,
+    "median": 3.33,
+    "p75": 4.83,
+    "max": 27.13
+  },
+  "compactness": {
+    "mean": 0.2627,
+    "median": 0.2197
+  },
+  "solar_latitude_distribution": {
+    "north_hemisphere_filaments": 648,
+    "south_hemisphere_filaments": 677,
+    "equatorial_filaments_pm10deg": 248,
+    "polar_crown_filaments_gt50deg": 12
+  }
+}

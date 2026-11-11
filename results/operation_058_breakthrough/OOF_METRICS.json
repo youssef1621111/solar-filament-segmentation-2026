@@ -1,0 +1,78 @@
+{
+  "challenge": "IEEE BigData 2026 Solar Filament Segmentation Challenge",
+  "metric": "Panoptic Quality (strict IoU > 0.50)",
+  "evaluation_protocol": "Stratified Grouped 5-Fold Cross-Validation (Stem-Isolated)",
+  "models": {
+    "convnext_tiny_baseline": {
+      "architecture": "ConvNeXt-Tiny UNet",
+      "tiling": "1024x1024 Gaussian Sliding Window",
+      "threshold": 0.60,
+      "oof_summary": {
+        "pq": 0.1803645644202981,
+        "sq": 0.6237532323319053,
+        "rq": 0.2891601278698053,
+        "tp": 995,
+        "fp": 3304,
+        "fn": 1588
+      },
+      "fold_scores": [
+        {"fold": 0, "pq": 0.27102314526718013, "sq": 0.616715932597767, "rq": 0.43946188340807174, "tp": 245, "fp": 453, "fn": 172},
+        {"fold": 1, "pq": 0.28800414857851825, "sq": 0.6345691407013352, "rq": 0.45385779122541603, "tp": 300, "fp": 545, "fn": 177},
+        {"fold": 2, "pq": 0.27618393512691186, "sq": 0.6281750334563145, "rq": 0.43966079582517936, "tp": 337, "fp": 588, "fn": 271},
+        {"fold": 3, "pq": 0.05677184198453041, "sq": 0.5971091522001273, "rq": 0.09507782919646614, "tp": 113, "fp": 1718, "fn": 433},
+        {"fold": 4, "pq": 0.0, "sq": 0.0, "rq": 0.0, "tp": 0, "fp": 0, "fn": 535}
+      ]
+    },
+    "convnext_tiny_wsp_calibrated": {
+      "architecture": "ConvNeXt-Tiny UNet (WSP Surgery & Calibration)",
+      "tiling": "1024x1024 Gaussian Sliding Window",
+      "fold3_wsp_bias_shift": -0.35,
+      "fold4_threshold": 0.50,
+      "oof_summary": {
+        "pq": 0.1683865345762943,
+        "sq": 0.619892065242458,
+        "rq": 0.2716384738856649,
+        "tp": 1100,
+        "fp": 4416,
+        "fn": 1483
+      },
+      "fold_scores": [
+        {"fold": 0, "pq": 0.27102314526718013, "sq": 0.616715932597767, "rq": 0.43946188340807174, "tp": 245, "fp": 453, "fn": 172},
+        {"fold": 1, "pq": 0.28800414857851825, "sq": 0.6345691407013352, "rq": 0.45385779122541603, "tp": 300, "fp": 545, "fn": 177},
+        {"fold": 2, "pq": 0.27618393512691186, "sq": 0.6281750334563145, "rq": 0.43966079582517936, "tp": 337, "fp": 588, "fn": 271},
+        {"fold": 3, "pq": 0.0642436421635651, "sq": 0.6012411894211029, "rq": 0.1068453489240182, "tp": 104, "fp": 1281, "fn": 442},
+        {"fold": 4, "pq": 0.06068508033316673, "sq": 0.5850319201449811, "rq": 0.1037283457819203, "tp": 114, "fp": 1549, "fn": 421}
+      ]
+    },
+    "efficientnet_b0_wsp": {
+      "architecture": "EfficientNet-B0 UNet",
+      "fold0_baseline": {
+        "pq": 0.2876612048592318,
+        "sq": 0.6241029411764706,
+        "rq": 0.4609204000303053,
+        "tp": 243,
+        "fp": 412,
+        "fn": 174
+      },
+      "fold0_wsp_l1_composite_calibrated": {
+        "pq": 0.2999518042918821,
+        "sq": 0.6311024912901235,
+        "rq": 0.4752838491029301,
+        "tp": 239,
+        "fp": 341,
+        "fn": 178,
+        "delta_pq_absolute": 0.0122905994326503,
+        "delta_pq_relative_percent": 4.272595
+      }
+    },
+    "multibackbone_ensemble_fold0": {
+      "models": ["WSP EfficientNet-B0", "ConvNeXt-Tiny"],
+      "pq": 0.2830449733880644,
+      "sq": 0.6251053966930734,
+      "rq": 0.45279560036663613,
+      "tp": 247,
+      "fp": 427,
+      "fn": 170
+    }
+  }
+}

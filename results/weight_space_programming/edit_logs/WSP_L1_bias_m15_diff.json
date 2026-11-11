@@ -1,0 +1,22 @@
+{
+  "edit_id": "WSP_L1_bias_m15",
+  "level": 1,
+  "title": "Level 1: Classification Bias Realignment (-0.15)",
+  "hypothesis": "Shifting final_conv.3.bias by -0.15 moves the default operating point into negative logit space, suppressing weak background activations and slashing false positives.",
+  "checkpoint_file": "WSP_L1_bias_m15.pt",
+  "sha256": "d65f1b83b60a01c8ea1db12973f249e4a7cddd17a6b210612eb16e2f1721615f",
+  "size_bytes": 41256206,
+  "size_mb": 39.34,
+  "tensor_modifications": [
+    {
+      "tensor": "final_conv.3.bias",
+      "shape": [
+        1
+      ],
+      "frobenius_delta": 0.15000000596046448,
+      "orig_mean": 0.09674585610628128,
+      "mod_mean": -0.0532541498541832,
+      "delta_mean": -0.15000000596046448
+    }
+  ]
+}

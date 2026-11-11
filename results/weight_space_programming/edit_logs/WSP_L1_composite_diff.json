@@ -1,0 +1,35 @@
+{
+  "edit_id": "WSP_L1_composite",
+  "level": 1,
+  "title": "Level 1: Composite Head Reprogramming (Bias -0.15 + Zero Ch 4,13 + Boost Inhib x1.10)",
+  "hypothesis": "Synergistic combination of negative bias shift, noisy channel pruning, and moderate inhibitory amplification to achieve maximal FP reduction without sacrificing TP recall.",
+  "checkpoint_file": "WSP_L1_composite.pt",
+  "sha256": "959d39da11e49175b6cdcdbefaf56e0eed96b73dd8d4955d888ec8cd9779301a",
+  "size_bytes": 41256206,
+  "size_mb": 39.34,
+  "tensor_modifications": [
+    {
+      "tensor": "final_conv.3.bias",
+      "shape": [
+        1
+      ],
+      "frobenius_delta": 0.15000000596046448,
+      "orig_mean": 0.09674585610628128,
+      "mod_mean": -0.0532541498541832,
+      "delta_mean": -0.15000000596046448
+    },
+    {
+      "tensor": "final_conv.3.weight",
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "frobenius_delta": 0.09279835224151611,
+      "orig_mean": -0.08430261164903641,
+      "mod_mean": -0.1024952232837677,
+      "delta_mean": -0.018192607909440994
+    }
+  ]
+}

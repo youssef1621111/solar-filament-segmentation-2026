@@ -1,0 +1,21 @@
+{
+  "id": "cracker1war/solar-filament-championship-gpu-inference",
+  "title": "Solar Filament Championship GPU Inference",
+  "code_file": "solar_filament_championship.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "competition_sources": [
+    "filament-segmentation-2026"
+  ],
+  "dataset_sources": [
+    "dariushafshar/solar-filament-unet-weights",
+    "cracker1war/solar-filament-championship-checkpoints",
+    "cracker1war/solar-filament-sota-anchors"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

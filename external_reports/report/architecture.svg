@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 900" font-family="Menlo, Consolas, monospace">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+    <style>
+      .box   { fill: #f7f9fc; stroke: #3b5b8c; stroke-width: 2; }
+      .train { fill: #fff8ec; stroke: #b07d2b; stroke-width: 2; }
+      .metricbox { fill: #f2f8f2; stroke: #3e7d44; stroke-width: 2; }
+      .t  { font-size: 19px; fill: #16233a; font-weight: bold; }
+      .s  { font-size: 15px; fill: #33465f; }
+      .m  { font-size: 14px; fill: #5a6b80; }
+      .h  { font-size: 20px; fill: #16233a; font-weight: bold; }
+      .big{ font-size: 26px; fill: #16233a; font-weight: bold; }
+      .flow { stroke: #444; stroke-width: 2.5; marker-end: url(#arrow); }
+      .lbl { font-size: 14px; fill: #7a4a00; }
+    </style>
+  </defs>
+
+  <text x="30" y="46" class="big">Final pipeline — YOLO11m detector + crop refiner U-Net (public LB 0.37)</text>
+  <text x="30" y="74" class="m">trained and evaluated on the MAGFiLO / filament-segmentation-2026 dataset (GONG Hα, 2048², COCO polygons, multi-annotator)</text>
+
+  <!-- main flow -->
+  <rect x="20" y="110" width="150" height="118" class="box" rx="10"/>
+  <text x="36" y="146" class="t">Hα input</text>
+  <text x="36" y="172" class="s">JPEG grayscale</text>
+  <text x="36" y="194" class="s">2048×2048</text>
+  <text x="36" y="216" class="s">(707 train / 180 test)</text>
+
+  <line x1="174" y1="169" x2="216" y2="169" class="flow"/>
+
+  <rect x="222" y="110" width="240" height="118" class="box" rx="10"/>
+  <text x="238" y="146" class="t">YOLO11m detector</text>
+  <text x="238" y="172" class="s">imgsz 1280 · NMS 0.5</text>
+  <text x="238" y="194" class="s">conf ≥ 0.35 → boxes</text>
+  <text x="238" y="216" class="s">one sample per annotation</text>
+
+  <line x1="466" y1="169" x2="508" y2="169" class="flow"/>
+
+  <rect x="514" y="110" width="240" height="118" class="box" rx="10"/>
+  <text x="530" y="146" class="t">Crop per box</text>
+  <text x="530" y="172" class="s">square 1.5×max(box), min 96</text>
+  <text x="530" y="194" class="s">→ resize 512², 3 channels:</text>
+  <text x="530" y="216" class="s">[gray, CLAHE(2,8,8), box-seed]</text>
+
+  <line x1="758" y1="169" x2="800" y2="169" class="flow"/>
+
+  <rect x="806" y="110" width="240" height="118" class="box" rx="10"/>
+  <text x="822" y="146" class="t">U-Net refiner</text>
+  <text x="822" y="172" class="s">resnet34 (ImageNet enc.)</text>
+  <text x="822" y="194" class="s">prob ≥ 0.40 → binary mask</text>
+  <text x="822" y="216" class="s">val Dice 0.825</text>
+
+  <line x1="1050" y1="169" x2="1092" y2="169" class="flow"/>
+
+  <rect x="1098" y="110" width="150" height="118" class="box" rx="10"/>
+  <text x="1114" y="146" class="t">Assembly</text>
+  <text x="1114" y="172" class="s">greedy disjoint</text>
+  <text x="1114" y="194" class="s">allocation by box</text>
+  <text x="1114" y="216" class="s">conf · area ≥ 300 px</text>
+
+  <line x1="1252" y1="169" x2="1294" y2="169" class="flow"/>
+
+  <rect x="1300" y="110" width="140" height="118" class="box" rx="10"/>
+  <text x="1316" y="146" class="t">Submission</text>
+  <text x="1316" y="172" class="s">COCO RLE CSV</text>
+  <text x="1316" y="194" class="s">1062 filaments</text>
+  <text x="1316" y="216" class="s">176/180 images</text>
+
+  <!-- training panels -->
+  <rect x="222" y="300" width="470" height="250" class="train" rx="10"/>
+  <text x="242" y="334" class="h">Training · detector</text>
+  <text x="242" y="364" class="s">• YOLO11m, 1280 px, 80 epochs, batch 4</text>
+  <text x="242" y="390" class="s">• 1154 annotation-records / 8199 boxes</text>
+  <text x="242" y="416" class="s">• small filaments oversampled (352 copies)</text>
+  <text x="242" y="442" class="s">• split by source image (seed 42), 106 val files</text>
+  <text x="242" y="468" class="s">• mAP50 0.699 · instance recall@.5 0.65</text>
+  <text x="242" y="494" class="s">• at conf 0.10 crops cover 91% of unique GT</text>
+  <text x="242" y="526" class="m">recall is the detector bottleneck, not precision</text>
+
+  <rect x="746" y="300" width="694" height="250" class="train" rx="10"/>
+  <text x="766" y="334" class="h">Training · refiner</text>
+  <text x="766" y="364" class="s">• target: the annotated filament mask inside the GT box</text>
+  <text x="766" y="390" class="s">• seed channel jittered (shift ±15%, scale .85–1.25, pad .5–1.5×)</text>
+  <text x="766" y="416" class="s">• 7092 train crops / 1107 val crops</text>
+  <text x="766" y="442" class="s">• loss 0.45·BCE + 0.55·soft-Dice · AdamW 3e-4 cosine · 12 ep</text>
+  <text x="766" y="468" class="s">• val Dice: 0.798 (ep1) → 0.825 (ep12, still rising)</text>
+  <text x="766" y="494" class="s">• inference: flip-free, batch 8, ~1 s/img on Kaggle GPU</text>
+  <text x="766" y="526" class="m">mask quality (mean IoU of TPs = 0.70) is the second bottleneck</text>
+
+  <!-- metric box -->
+  <rect x="222" y="600" width="1218" height="250" class="metricbox" rx="10"/>
+  <text x="242" y="634" class="h">Why the pipeline looks like this — the official metric (Panoptic Quality, per annotator)</text>
+  <text x="242" y="666" class="s">• GT has ~1.6 annotations per unique filament (411 files with 1 annotator, 145 with 2, 151 with 3).</text>
+  <text x="242" y="692" class="s">• A prediction is compared against EVERY annotator separately: one predicted filament drawn by k of A annotators</text>
+  <text x="242" y="718" class="s">  gives k TP pairs and (A−k) FP. TP ⇔ IoU &gt; 0.5 (non-exclusive); PQ = ΣIoU / (TP + 0.5·FP + 0.5·FN).</text>
+  <text x="242" y="744" class="s">• Oracle ceilings we measured on val (106 files): perfect single annotator 0.77 · union of annotators 0.78 ·</text>
+  <text x="242" y="770" class="s">  consensus ≥2 annotators only 0.46. Our model: 0.442 val → mean IoU of TP 0.70, FP and FN both matter.</text>
+  <text x="242" y="796" class="s">• 1 recovered filament ≈ compensates 2 false positives (ioU 0.67) → the operating point is precision-heavy:</text>
+  <text x="242" y="822" class="s">  high box confidence (0.35), high mask threshold (0.40) and an area floor (300 px) to avoid FP floods.</text>
+</svg>

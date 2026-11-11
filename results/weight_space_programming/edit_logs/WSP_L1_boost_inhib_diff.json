@@ -1,0 +1,25 @@
+{
+  "edit_id": "WSP_L1_boost_inhib",
+  "level": 1,
+  "title": "Level 1: Inhibitory Background Suppressor Amplification (x1.15)",
+  "hypothesis": "Channels with negative weights act as solar background suppressors. Multiplying their weights by 1.15 increases background rejection over quiet sun regions.",
+  "checkpoint_file": "WSP_L1_boost_inhib.pt",
+  "sha256": "566d7a85862eddfdaf696b7b6aeaa9cbb00ed3d628b927e2facde1367bec8309",
+  "size_bytes": 41256206,
+  "size_mb": 39.34,
+  "tensor_modifications": [
+    {
+      "tensor": "final_conv.3.weight",
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "frobenius_delta": 0.12158919125795364,
+      "orig_mean": -0.08430261164903641,
+      "mod_mean": -0.10560768097639084,
+      "delta_mean": -0.02130507305264473
+    }
+  ]
+}

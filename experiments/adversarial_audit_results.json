@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-11-09T11:53:27Z",
+  "submission_path": "/home/fathyyoussef162/submission.csv",
+  "disjoint_canvas": {
+    "total_test_stems": 180,
+    "zero_instance_stems": 2,
+    "single_instance_stems": 11,
+    "multi_instance_stems": 167,
+    "total_masks_decoded": 1327,
+    "colliding_stems_count": 0,
+    "colliding_pairs_count": 0,
+    "total_colliding_pixels": 0,
+    "invariant_passed": true
+  },
+  "rle_stress_test": {
+    "total_rles": 1327,
+    "sum_exact_4194304": 1327,
+    "sum_mismatches": 0,
+    "negative_counts": 0,
+    "foreground_at_00": 0,
+    "leading_zeros": 0,
+    "rule_00_inconsistencies": 0,
+    "pycocotools_mismatches": 0,
+    "synthetic_oracle_passed": true,
+    "invariant_passed": true
+  },
+  "boundary_extremes": {
+    "min_area": 116,
+    "max_area": 23292,
+    "mean_area": 1897.9321778447627,
+    "std_area": 2342.601864064017,
+    "area_percentiles": {
+      "p1": 195.78,
+      "p5": 299.6,
+      "p10": 390.2,
+      "p25": 625.5,
+      "p50": 1114.0,
+      "p75": 2234.0,
+      "p90": 4105.200000000001,
+      "p95": 6094.000000000001,
+      "p99": 12087.240000000005
+    },
+    "aspect_ratio_min_hw": 0.0425,
+    "aspect_ratio_max_hw": 7.923076923076923,
+    "aspect_ratio_median_hw": 0.9264705882352942,
+    "elongation_min": 1.0,
+    "elongation_max": 23.529411764705884,
+    "elongation_median": 1.734375,
+    "touching_boundary_count": 0,
+    "empty_strings": 0,
+    "whitespace_issues": 0,
+    "corrupted_strings": 0,
+    "fuzz_truncations_caught": 50,
+    "fuzz_samples_count": 50,
+    "fuzzing_passed": true
+  },
+  "fuzzing": {},
+  "verdict": "APPROVE",
+  "verdict_checks": {
+    "Disjoint Canvas (0 colliding pixels across all 180 stems)": true,
+    "Bit-Exact Sum (100% of RLEs sum to exactly 4,194,304)": true,
+    "No Negative Counts (0 negative run lengths)": true,
+    "(0,0) Foreground Leading Zero Invariant": true,
+    "Pycocotools C-decode Bit-Exact Agreement": true,
+    "Zero Corrupted / Truncated / Whitespace Anomalies": true,
+    "Quiet Sun Zero-Row Guard (0 rows on 2 quiet sun stems)": true,
+    "Non-Empty Filament Area (min_area > 0)": true,
+    "Fuzzing & Truncation Rejection (100% caught)": true
+  },
+  "elapsed_seconds": 462.16
+}

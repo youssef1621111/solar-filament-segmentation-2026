@@ -1,0 +1,235 @@
+{
+  "benchmark_base_pq": 0.26117894595525876,
+  "results_table": [
+    {
+      "name": "Baseline (Original EffNet-B0)",
+      "edit_type": "baseline",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.26117894595525876,
+      "sq": 0.6228550080715627,
+      "rq": 0.4193254329990884,
+      "tp": 230,
+      "fp": 450,
+      "fn": 187
+    },
+    {
+      "name": "WSP L1: Bias Realignment (-0.15)",
+      "edit_type": "WSP_L1_bias_m15",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.28139307824854826,
+      "sq": 0.623658944852905,
+      "rq": 0.45119705340699817,
+      "tp": 245,
+      "fp": 424,
+      "fn": 172
+    },
+    {
+      "name": "WSP L1: Noisy Channel Damping (Ch 4,13)",
+      "edit_type": "WSP_L1_damp_noisy",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.27265037284853405,
+      "sq": 0.6214824675223939,
+      "rq": 0.43870967741935485,
+      "tp": 238,
+      "fp": 430,
+      "fn": 179
+    },
+    {
+      "name": "WSP L1: Inhibitory Amplification (x1.15)",
+      "edit_type": "WSP_L1_boost_inhib",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.26577070214022036,
+      "sq": 0.6229710689056018,
+      "rq": 0.4266180492251595,
+      "tp": 234,
+      "fp": 446,
+      "fn": 183
+    },
+    {
+      "name": "WSP L1: Composite Head Surgery",
+      "edit_type": "WSP_L1_composite",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.28766284521856056,
+      "sq": 0.6269426122606129,
+      "rq": 0.4588344125809436,
+      "tp": 248,
+      "fp": 416,
+      "fn": 169
+    },
+    {
+      "name": "WSP L2: SVD Rank-14 Noise Truncation",
+      "edit_type": "WSP_L2_svd_trunc",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.12352243774695218,
+      "sq": 0.5476161406781547,
+      "rq": 0.22556390977443608,
+      "tp": 120,
+      "fp": 527,
+      "fn": 297
+    },
+    {
+      "name": "WSP L3: Weight Space Merge (Baseline + Composite)",
+      "edit_type": "WSP_weight_merge",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.2802402143364649,
+      "sq": 0.6216757407831375,
+      "rq": 0.45078196872125115,
+      "tp": 245,
+      "fp": 425,
+      "fn": 172
+    },
+    {
+      "name": "Probability Map Ensemble (Baseline + Composite)",
+      "edit_type": "ensemble_prob_map",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.28026155172267175,
+      "sq": 0.6217230749439676,
+      "rq": 0.45078196872125115,
+      "tp": 245,
+      "fp": 425,
+      "fn": 172
+    }
+  ],
+  "calibration_sweep": [
+    {
+      "model": "Baseline",
+      "thresh": 0.45,
+      "min_area": 100,
+      "pq": 0.18947676268631258,
+      "sq": 0.6134698464024054,
+      "rq": 0.30886075949367087,
+      "tp": 183,
+      "fp": 585,
+      "fn": 234
+    },
+    {
+      "model": "Baseline",
+      "thresh": 0.5,
+      "min_area": 100,
+      "pq": 0.21468339852264604,
+      "sq": 0.6152121271096722,
+      "rq": 0.3489583333333333,
+      "tp": 201,
+      "fp": 534,
+      "fn": 216
+    },
+    {
+      "model": "Baseline",
+      "thresh": 0.55,
+      "min_area": 100,
+      "pq": 0.2403339502072656,
+      "sq": 0.616198689686665,
+      "rq": 0.390026714158504,
+      "tp": 219,
+      "fp": 487,
+      "fn": 198
+    },
+    {
+      "model": "Baseline",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.26117894595525876,
+      "sq": 0.6228550080715627,
+      "rq": 0.4193254329990884,
+      "tp": 230,
+      "fp": 450,
+      "fn": 187
+    },
+    {
+      "model": "Baseline",
+      "thresh": 0.65,
+      "min_area": 100,
+      "pq": 0.2857004344002204,
+      "sq": 0.6271472950248741,
+      "rq": 0.45555555555555555,
+      "tp": 246,
+      "fp": 417,
+      "fn": 171
+    },
+    {
+      "model": "Baseline",
+      "thresh": 0.7,
+      "min_area": 100,
+      "pq": 0.29406001564775636,
+      "sq": 0.6351214272392114,
+      "rq": 0.4629981024667932,
+      "tp": 244,
+      "fp": 393,
+      "fn": 173
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.45,
+      "min_area": 100,
+      "pq": 0.21491345178294646,
+      "sq": 0.6169406053669657,
+      "rq": 0.3483535528596187,
+      "tp": 201,
+      "fp": 536,
+      "fn": 216
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.5,
+      "min_area": 100,
+      "pq": 0.24163712440285706,
+      "sq": 0.6167238425100193,
+      "rq": 0.39180765805877116,
+      "tp": 220,
+      "fp": 486,
+      "fn": 197
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.55,
+      "min_area": 100,
+      "pq": 0.26326326621619917,
+      "sq": 0.6233982970574068,
+      "rq": 0.42230347349177333,
+      "tp": 231,
+      "fp": 446,
+      "fn": 186
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.6,
+      "min_area": 100,
+      "pq": 0.28766284521856056,
+      "sq": 0.6269426122606129,
+      "rq": 0.4588344125809436,
+      "tp": 248,
+      "fp": 416,
+      "fn": 169
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.65,
+      "min_area": 100,
+      "pq": 0.28897900503081675,
+      "sq": 0.6369578902554253,
+      "rq": 0.45368620037807184,
+      "tp": 240,
+      "fp": 401,
+      "fn": 177
+    },
+    {
+      "model": "WSP Composite",
+      "thresh": 0.7,
+      "min_area": 100,
+      "pq": 0.2999475761066544,
+      "sq": 0.6436375070621957,
+      "rq": 0.46601941747572817,
+      "tp": 240,
+      "fp": 373,
+      "fn": 177
+    }
+  ]
+}

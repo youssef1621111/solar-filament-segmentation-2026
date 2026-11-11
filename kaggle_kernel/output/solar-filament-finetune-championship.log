@@ -1,0 +1,137 @@
+[{"stream_name":"stdout","time":30.226621223,"data":"[   0.0m] Active Compute Device: cuda\n"}
+,{"stream_name":"stdout","time":30.269534022,"data":"[   0.0m] GPU Model: Tesla T4 (Total VRAM: 15.6 GB)\n"}
+,{"stream_name":"stdout","time":30.269585242,"data":"[   0.0m] Frozen split loaded: 707 physical observation stems.\n"}
+,{"stream_name":"stdout","time":30.269837148,"data":"[   0.0m] === Starting Phase 5: High-Capacity Backbones, TTA \u0026 Ensemble Championship ===\n"}
+,{"stream_name":"stdout","time":32.673017689,"data":"[   0.0m] =================================================================\n"}
+,{"stream_name":"stdout","time":32.673056699,"data":"[   0.0m] EXPERIMENT 1: Backbone Scaling on Fold 0 (B0 vs B3 vs ConvNeXt-Tiny)\n"}
+,{"stream_name":"stdout","time":32.673062104,"data":"[   0.0m] =================================================================\n"}
+,{"stream_name":"stdout","time":32.673932532,"data":"[   0.0m] --- Starting Training \u0026 Validation: efficientnet_b0_fold0 (TTA=False) ---\n"}
+,{"stream_name":"stdout","time":32.711472475,"data":"[   0.0m] Prepared 1762 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":33.104625915,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":33.46437968,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 34%|███▎      | 6.88M/20.5M [00:00\u003c00:00, 72.0MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 123MB/s] \n"}
+,{"stream_name":"stdout","time":280.411271443,"data":"[   4.2m] Fold 0 [efficientnet_b0] Ep 1/3 | Loss: 1.4308 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":510.800753461,"data":"[   8.0m] Fold 0 [efficientnet_b0] Ep 2/3 | Loss: 1.2492 | LR: 1.06e-04\n"}
+,{"stream_name":"stdout","time":747.544516925,"data":"[  12.0m] Fold 0 [efficientnet_b0] Ep 3/3 | Loss: 1.1979 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":859.417478582,"data":"[  13.8m] Fold 0 [efficientnet_b0 | TTA=False] PQ: 0.28080 (SQ: 0.63110, RQ: 0.44494 | TP: 998, FP: 1727, FN: 763)\n"}
+,{"stream_name":"stdout","time":859.423159082,"data":"[  13.8m] --- Starting Training \u0026 Validation: efficientnet_b3_fold0 (TTA=False) ---\n"}
+,{"stream_name":"stdout","time":859.444959031,"data":"[  13.8m] Prepared 1762 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":859.640892712,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b3_rwightman-b3899882.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b3_rwightman-b3899882.pth\n"}
+,{"stream_name":"stderr","time":860.041132966,"data":"\r  0%|          | 0.00/47.2M [00:00\u003c?, ?B/s]\r 14%|█▍        | 6.50M/47.2M [00:00\u003c00:00, 67.9MB/s]\r 47%|████▋     | 22.1M/47.2M [00:00\u003c00:00, 124MB/s] \r 95%|█████████▍| 44.6M/47.2M [00:00\u003c00:00, 175MB/s]\r100%|██████████| 47.2M/47.2M [00:00\u003c00:00, 158MB/s]\n"}
+,{"stream_name":"stdout","time":1153.075357178,"data":"[  18.7m] Fold 0 [efficientnet_b3] Ep 1/3 | Loss: 1.4507 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":1442.782441137,"data":"[  23.5m] Fold 0 [efficientnet_b3] Ep 2/3 | Loss: 1.2716 | LR: 1.06e-04\n"}
+,{"stream_name":"stdout","time":1733.225410482,"data":"[  28.4m] Fold 0 [efficientnet_b3] Ep 3/3 | Loss: 1.2191 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":1860.170217262,"data":"[  30.5m] Fold 0 [efficientnet_b3 | TTA=False] PQ: 0.27625 (SQ: 0.62941, RQ: 0.43890 | TP: 1011, FP: 1835, FN: 750)\n"}
+,{"stream_name":"stdout","time":1860.176389141,"data":"[  30.5m] --- Starting Training \u0026 Validation: convnext_tiny_fold0 (TTA=False) ---\n"}
+,{"stream_name":"stdout","time":1860.197639608,"data":"[  30.5m] Prepared 1762 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":1860.679440758,"data":"Downloading: \"https://download.pytorch.org/models/convnext_tiny-983f1562.pth\" to /root/.cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth\n"}
+,{"stream_name":"stderr","time":1861.377271144,"data":"\r  0%|          | 0.00/109M [00:00\u003c?, ?B/s]\r  6%|▌         | 6.75M/109M [00:00\u003c00:01, 61.3MB/s]\r 22%|██▏       | 23.6M/109M [00:00\u003c00:00, 125MB/s] \r 42%|████▏     | 46.1M/109M [00:00\u003c00:00, 174MB/s]\r 62%|██████▏   | 68.1M/109M [00:00\u003c00:00, 195MB/s]\r 81%|████████▏ | 88.8M/109M [00:00\u003c00:00, 203MB/s]\r 99%|█████████▉| 108M/109M [00:00\u003c00:00, 195MB/s] \r100%|██████████| 109M/109M [00:00\u003c00:00, 181MB/s]\n"}
+,{"stream_name":"stdout","time":2135.718826691,"data":"[  35.1m] Fold 0 [convnext_tiny] Ep 1/3 | Loss: 1.4022 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":2402.564693281,"data":"[  39.5m] Fold 0 [convnext_tiny] Ep 2/3 | Loss: 1.2387 | LR: 1.06e-04\n"}
+,{"stream_name":"stdout","time":2668.821646444,"data":"[  44.0m] Fold 0 [convnext_tiny] Ep 3/3 | Loss: 1.1913 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":2799.369055716,"data":"[  46.2m] Fold 0 [convnext_tiny | TTA=False] PQ: 0.28172 (SQ: 0.62802, RQ: 0.44858 | TP: 1012, FP: 1739, FN: 749)\n"}
+,{"stream_name":"stdout","time":2799.372742761,"data":"[  46.2m] Fold 0 Scaled Results -\u003e EffNet-B0 PQ: 0.28080 | EffNet-B3 PQ: 0.27625 | ConvNeXt-Tiny PQ: 0.28172\n"}
+,{"stream_name":"stdout","time":2799.372769099,"data":"[  46.2m] \u003e\u003e\u003e Winner Backbone Selected for 5-Fold Scaling: convnext_tiny (PQ: 0.28172)\n"}
+,{"stream_name":"stdout","time":2799.372776502,"data":"[  46.2m] =================================================================\n"}
+,{"stream_name":"stdout","time":2799.372782193,"data":"[  46.2m] EXPERIMENT 2: Test-Time Augmentation (TTA) Ablation on Fold 0\n"}
+,{"stream_name":"stdout","time":2799.372795067,"data":"[  46.2m] =================================================================\n"}
+,{"stream_name":"stdout","time":3063.320273645,"data":"[  50.6m] \u003e\u003e\u003e Exp 2 TTA Impact: Without TTA PQ = 0.28172 -\u003e With TTA PQ = 0.29070 (Delta: +0.00898)\n"}
+,{"stream_name":"stdout","time":3063.320324532,"data":"[  50.6m] =================================================================\n"}
+,{"stream_name":"stdout","time":3063.320332635,"data":"[  50.6m] EXPERIMENT 3 \u0026 4: Full 5-Fold Training of convnext_tiny with Calibrated TTA\n"}
+,{"stream_name":"stdout","time":3063.320339117,"data":"[  50.6m] =================================================================\n"}
+,{"stream_name":"stdout","time":3063.321615511,"data":"[  50.6m] --- Starting Training \u0026 Validation: convnext_tiny_fold1 (TTA=True) ---\n"}
+,{"stream_name":"stdout","time":3063.340402724,"data":"[  50.6m] Prepared 1770 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":3337.210870862,"data":"[  55.1m] Fold 1 [convnext_tiny] Ep 1/3 | Loss: 1.3514 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":3614.510914811,"data":"[  59.7m] Fold 1 [convnext_tiny] Ep 2/3 | Loss: 1.1564 | LR: 1.06e-04\n"}
+,{"stream_name":"stdout","time":3889.039042556,"data":"[  64.3m] Fold 1 [convnext_tiny] Ep 3/3 | Loss: 1.0994 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":4157.014159383,"data":"[  68.8m] Fold 1 [convnext_tiny | TTA=True] PQ: 0.29265 (SQ: 0.63402, RQ: 0.46157 | TP: 988, FP: 1705, FN: 600)\n"}
+,{"stream_name":"stdout","time":4157.019442145,"data":"[  68.8m] --- Starting Training \u0026 Validation: convnext_tiny_fold2 (TTA=True) ---\n"}
+,{"stream_name":"stdout","time":4157.036678551,"data":"[  68.8m] Prepared 1750 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":4429.561748545,"data":"[  73.3m] Fold 2 [convnext_tiny] Ep 1/3 | Loss: 1.3156 | LR: 3.03e-04\n"}
+,{"stream_name":"stdout","time":4700.3383705,"data":"[  77.8m] Fold 2 [convnext_tiny] Ep 2/3 | Loss: 1.1928 | LR: 1.08e-04\n"}
+,{"stream_name":"stdout","time":4971.006860928,"data":"[  82.3m] Fold 2 [convnext_tiny] Ep 3/3 | Loss: 1.1538 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":5235.825188067,"data":"[  86.8m] Fold 2 [convnext_tiny | TTA=True] PQ: 0.30596 (SQ: 0.63156, RQ: 0.48445 | TP: 958, FP: 1385, FN: 654)\n"}
+,{"stream_name":"stdout","time":5235.830868629,"data":"[  86.8m] --- Starting Training \u0026 Validation: convnext_tiny_fold3 (TTA=True) ---\n"}
+,{"stream_name":"stdout","time":5235.849898931,"data":"[  86.8m] Prepared 1771 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":5511.593840909,"data":"[  91.4m] Fold 3 [convnext_tiny] Ep 1/3 | Loss: 1.4352 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":5786.657660544,"data":"[  95.9m] Fold 3 [convnext_tiny] Ep 2/3 | Loss: 1.2883 | LR: 1.06e-04\n"}
+,{"stream_name":"stdout","time":6060.431521176,"data":"[ 100.5m] Fold 3 [convnext_tiny] Ep 3/3 | Loss: 1.2375 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":6381.454511888,"data":"[ 105.9m] Fold 3 [convnext_tiny | TTA=True] PQ: 0.05990 (SQ: 0.59126, RQ: 0.10132 | TP: 354, FP: 5078, FN: 1202)\n"}
+,{"stream_name":"stdout","time":6381.460587553,"data":"[ 105.9m] --- Starting Training \u0026 Validation: convnext_tiny_fold4 (TTA=True) ---\n"}
+,{"stream_name":"stdout","time":6381.479497845,"data":"[ 105.9m] Prepared 1767 native 1024x1024 tile samples across training folds.\n"}
+,{"stream_name":"stdout","time":6648.929271008,"data":"[ 110.3m] Fold 4 [convnext_tiny] Ep 1/3 | Loss: 1.5083 | LR: 3.02e-04\n"}
+,{"stream_name":"stdout","time":6920.522069592,"data":"[ 114.8m] Fold 4 [convnext_tiny] Ep 2/3 | Loss: 1.3191 | LR: 1.08e-04\n"}
+,{"stream_name":"stdout","time":7193.500398116,"data":"[ 119.4m] Fold 4 [convnext_tiny] Ep 3/3 | Loss: 1.2606 | LR: 1.00e-05\n"}
+,{"stream_name":"stdout","time":7408.727517555,"data":"[ 123.0m] Fold 4 [convnext_tiny | TTA=True] PQ: 0.00000 (SQ: 0.00000, RQ: 0.00000 | TP: 0, FP: 0, FN: 1682)\n"}
+,{"stream_name":"stdout","time":7408.731994047,"data":"[ 123.0m] \u003e\u003e\u003e Exp 3 5-Fold Scaled Backbone (convnext_tiny): Mean PQ = 0.18984 +/- 0.13202\n"}
+,{"stream_name":"stdout","time":7408.732038359,"data":"[ 123.0m] =================================================================\n"}
+,{"stream_name":"stdout","time":7408.732045019,"data":"[ 123.0m] EXPERIMENT 5: Out-of-Fold 5-Model Ensemble Evaluation\n"}
+,{"stream_name":"stdout","time":7408.732050731,"data":"[ 123.0m] =================================================================\n"}
+,{"stream_name":"stdout","time":7666.042408669,"data":"[ 127.3m] \u003e\u003e\u003e Full 5-Fold OOF PQ = 0.19571 (SQ: 0.62767, RQ: 0.31181 | TP: 3337, FP: 9868, FN: 4862)\n"}
+,{"stream_name":"stdout","time":7666.042462988,"data":"[ 127.3m] =================================================================\n"}
+,{"stream_name":"stdout","time":7666.04246783,"data":"[ 127.3m] EXPERIMENT 6: Competition Test Set Inference \u0026 Zero-Trust Guardrails\n"}
+,{"stream_name":"stdout","time":7666.042471667,"data":"[ 127.3m] =================================================================\n"}
+,{"stream_name":"stdout","time":7666.053425803,"data":"[ 127.3m] Found 180 test images in: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/test/test_images\n"}
+,{"stream_name":"stderr","time":7666.826868895,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":7666.829074116,"data":"  File \"/kaggle/src/script.py\", line 974, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":7666.82911045,"data":"    main()\n"}
+,{"stream_name":"stderr","time":7666.82911604,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":7666.829120058,"data":"  File \"/kaggle/src/script.py\", line 907, in main\n"}
+,{"stream_name":"stderr","time":7666.829145016,"data":"    mod_prob = predict_single_image(mod, img, gaussian_weight, use_tta=True)\n"}
+,{"stream_name":"stderr","time":7666.829149836,"data":"  File \"/kaggle/src/script.py\", line 503, in predict_single_image\n"}
+,{"stream_name":"stderr","time":7666.829154243,"data":"    logits = model(p_tensor)\n"}
+,{"stream_name":"stderr","time":7666.829157696,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":7666.829162021,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829166866,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829171072,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":7666.829175422,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829179847,"data":"  File \"/kaggle/src/script.py\", line 214, in forward\n"}
+,{"stream_name":"stderr","time":7666.829184435,"data":"    s1 = self.features[1](self.features[0](x))  # 96 ch, 1/4\n"}
+,{"stream_name":"stderr","time":7666.829188789,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":7666.829192891,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.82920008,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.82920454,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":7666.829209305,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829213476,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/container.py\", line 253, in forward\n"}
+,{"stream_name":"stderr","time":7666.829218069,"data":"    input = module(input)\n"}
+,{"stream_name":"stderr","time":7666.829222872,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":7666.829227795,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829232082,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.82923661,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":7666.829240751,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829244618,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torchvision/models/convnext.py\", line 64, in forward\n"}
+,{"stream_name":"stderr","time":7666.829248821,"data":"    result = self.layer_scale * self.block(input)\n"}
+,{"stream_name":"stderr","time":7666.829252649,"data":"                                ~~~~~~~~~~^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829256603,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":7666.829260667,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829266357,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829279894,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":7666.829283015,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829285701,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/container.py\", line 253, in forward\n"}
+,{"stream_name":"stderr","time":7666.829288532,"data":"    input = module(input)\n"}
+,{"stream_name":"stderr","time":7666.829291232,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":7666.829294063,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829296757,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829299774,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":7666.829302738,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":7666.829305452,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/normalization.py\", line 229, in forward\n"}
+,{"stream_name":"stderr","time":7666.829323344,"data":"    return F.layer_norm(\n"}
+,{"stream_name":"stderr","time":7666.829327826,"data":"           ~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":7666.829332324,"data":"        input, self.normalized_shape, self.weight, self.bias, self.eps\n"}
+,{"stream_name":"stderr","time":7666.829336567,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829341323,"data":"    )\n"}
+,{"stream_name":"stderr","time":7666.829345584,"data":"    ^\n"}
+,{"stream_name":"stderr","time":7666.829349224,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py\", line 2935, in layer_norm\n"}
+,{"stream_name":"stderr","time":7666.829353423,"data":"    return torch.layer_norm(\n"}
+,{"stream_name":"stderr","time":7666.829357268,"data":"           ~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":7666.829360939,"data":"        input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled\n"}
+,{"stream_name":"stderr","time":7666.829365014,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":7666.829368898,"data":"    )\n"}
+,{"stream_name":"stderr","time":7666.829372498,"data":"    ^\n"}
+,{"stream_name":"stderr","time":7666.829379062,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 6.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in use. Of the allocated memory 14.34 GiB is allocated by PyTorch, and 59.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":7682.032393644,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":7682.03243652,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":7682.576226508,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":7682.576268714,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":7683.932325036,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":7685.805088579,"data":"[NbConvertApp] Writing 505055 bytes to __results__.html\n"}
+]

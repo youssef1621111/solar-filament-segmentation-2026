@@ -1,0 +1,18 @@
+# GCP Cloud Composer Deployment Configuration
+# Product: IEEE BigData 2026 Solar Filament Segmentation Pipeline
+environments:
+  dev:
+    project: "solar-filament-2026"
+    region: "us-central1"
+    composer_environment: "solar-filament-composer"
+    artifact_storage:
+      bucket: "solar-filament-artifacts-dev"
+      path_prefix: "orchestration/dev"
+    pipelines:
+      - source: "orchestration-pipeline.yaml"
+    variables:
+      DATA_DIR: "/tmp/comp_data/MAGFiLO_1.0_Kaggle_2026"
+      SUBMISSION_DIR: "/home/fathyyoussef162/experiments"
+      PRIMARY_CANDIDATE: "submission_championship_v10_apex_180.csv"
+      IMAGE_SIZE: "2048"
+      TARGET_PQ: "0.7200"

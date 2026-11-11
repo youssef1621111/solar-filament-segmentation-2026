@@ -1,0 +1,49 @@
+# System & Environment
+.gemini/
+.local/
+.cache/
+.codeoss/
+.config/
+.docker/
+.npm/
+.rustup/
+.vscode/
+.agents/
+.bash*
+.profile
+.sudo_as_admin_successful
+README-cloudshell.txt
+
+# Python & Build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Large Datasets & Model Weights
+competition_data/
+models/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.ckpt
+*.safetensors
+
+# Temporary Model Outputs & Cache
+fususu_out/
+gpu_inference_out/
+submission_output/
+external_kernels/
+results/weight_space_programming/original_checkpoints/
+results/weight_space_programming/edited_checkpoints/
+
+# Secrets & Local Configs
+.kaggle/
+.env
+*token*

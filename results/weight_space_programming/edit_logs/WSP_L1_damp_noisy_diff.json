@@ -1,0 +1,25 @@
+{
+  "edit_id": "WSP_L1_damp_noisy",
+  "level": 1,
+  "title": "Level 1: Excitatory Noisy Channel Suppression (Ch 4, 13)",
+  "hypothesis": "Channels 4 and 13 have negligible positive weights (+0.033, +0.030) compared to primary filament channels (+0.187). Setting them to 0 prunes noisy excitatory leakage.",
+  "checkpoint_file": "WSP_L1_damp_noisy.pt",
+  "sha256": "c4c931b5fa1351f16b1443387e21d5959944a95149039fd9056d535268bb5f02",
+  "size_bytes": 41256206,
+  "size_mb": 39.34,
+  "tensor_modifications": [
+    {
+      "tensor": "final_conv.3.weight",
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "frobenius_delta": 0.04517623037099838,
+      "orig_mean": -0.08430261164903641,
+      "mod_mean": -0.08829183131456375,
+      "delta_mean": -0.003989220596849918
+    }
+  ]
+}

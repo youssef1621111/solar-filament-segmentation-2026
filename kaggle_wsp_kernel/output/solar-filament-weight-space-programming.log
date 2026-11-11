@@ -1,0 +1,77 @@
+[{"stream_name":"stdout","time":17.741665918,"data":"[   0.0m] ================================================================================\n"}
+,{"stream_name":"stdout","time":17.741717027,"data":"[   0.0m] STARTING WEIGHT-SPACE PROGRAMMING (WSP) RESEARCH EXECUTION\n"}
+,{"stream_name":"stdout","time":17.741722621,"data":"[   0.0m] ================================================================================\n"}
+,{"stream_name":"stdout","time":18.914416762,"data":"[   0.0m] Images: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/train/train_images\n"}
+,{"stream_name":"stdout","time":18.914443379,"data":"[   0.0m] COCO Annotations: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/train/MAGFiLO_1.0_Annotations_kaggle2026_train.json\n"}
+,{"stream_name":"stdout","time":19.587730059,"data":"[   0.0m] Fold 0 Validation contains 29 physical stems.\n"}
+,{"stream_name":"stdout","time":19.608351538,"data":"[   0.0m] Built Ground Truth DataFrame: 417 annotations.\n"}
+,{"stream_name":"stdout","time":20.311917059,"data":"[   0.0m] Found baseline checkpoint at: /kaggle/input/solar-filament-b0-checkpoint/efficientnet_b0_fold0.pt\n"}
+,{"stream_name":"stdout","time":23.588524487,"data":"[   0.1m] Pre-loading Fold 0 validation stem images into memory...\n"}
+,{"stream_name":"stdout","time":24.486902898,"data":"[   0.1m] Cached 29 validation images.\n"}
+,{"stream_name":"stdout","time":24.502434002,"data":"[   0.1m] \n"}
+,{"stream_name":"stdout","time":24.502456481,"data":"--- Evaluating Candidate: Baseline (Original EffNet-B0) ---\n"}
+,{"stream_name":"stdout","time":51.267629524,"data":"[   0.6m] Result [Baseline (Original EffNet-B0)] (tau=0.60, area=100) -\u003e PQ: 0.26118 (SQ: 0.62286, RQ: 0.41933 | TP: 230, FP: 450, FN: 187) in 15.4s\n"}
+,{"stream_name":"stdout","time":51.267656484,"data":"[   0.6m] \n"}
+,{"stream_name":"stdout","time":51.267661694,"data":"--- Evaluating Candidate: WSP L1: Bias Realignment (-0.15) ---\n"}
+,{"stream_name":"stdout","time":69.999280476,"data":"[   0.9m] Result [WSP L1: Bias Realignment (-0.15)] (tau=0.60, area=100) -\u003e PQ: 0.28139 (SQ: 0.62366, RQ: 0.45120 | TP: 245, FP: 424, FN: 172) in 7.7s\n"}
+,{"stream_name":"stdout","time":69.999324852,"data":"[   0.9m] \n"}
+,{"stream_name":"stdout","time":69.999331468,"data":"--- Evaluating Candidate: WSP L1: Noisy Channel Damping (Ch 4,13) ---\n"}
+,{"stream_name":"stdout","time":88.869335468,"data":"[   1.2m] Result [WSP L1: Noisy Channel Damping (Ch 4,13)] (tau=0.60, area=100) -\u003e PQ: 0.27265 (SQ: 0.62148, RQ: 0.43871 | TP: 238, FP: 430, FN: 179) in 7.9s\n"}
+,{"stream_name":"stdout","time":88.869393953,"data":"[   1.2m] \n"}
+,{"stream_name":"stdout","time":88.869400478,"data":"--- Evaluating Candidate: WSP L1: Inhibitory Amplification (x1.15) ---\n"}
+,{"stream_name":"stdout","time":107.843781758,"data":"[   1.5m] Result [WSP L1: Inhibitory Amplification (x1.15)] (tau=0.60, area=100) -\u003e PQ: 0.26577 (SQ: 0.62297, RQ: 0.42662 | TP: 234, FP: 446, FN: 183) in 7.9s\n"}
+,{"stream_name":"stdout","time":107.843843522,"data":"[   1.5m] \n"}
+,{"stream_name":"stdout","time":107.843848084,"data":"--- Evaluating Candidate: WSP L1: Composite Head Surgery ---\n"}
+,{"stream_name":"stdout","time":126.589879553,"data":"[   1.8m] Result [WSP L1: Composite Head Surgery] (tau=0.60, area=100) -\u003e PQ: 0.28766 (SQ: 0.62694, RQ: 0.45883 | TP: 248, FP: 416, FN: 169) in 8.0s\n"}
+,{"stream_name":"stdout","time":126.589923601,"data":"[   1.8m] \n"}
+,{"stream_name":"stdout","time":126.589927952,"data":"--- Evaluating Candidate: WSP L2: SVD Rank-14 Noise Truncation ---\n"}
+,{"stream_name":"stdout","time":145.129927757,"data":"[   2.1m] Result [WSP L2: SVD Rank-14 Noise Truncation] (tau=0.60, area=100) -\u003e PQ: 0.12352 (SQ: 0.54762, RQ: 0.22556 | TP: 120, FP: 527, FN: 297) in 8.0s\n"}
+,{"stream_name":"stdout","time":145.130010434,"data":"[   2.1m] \n"}
+,{"stream_name":"stdout","time":145.130017849,"data":"--- Evaluating Candidate: WSP L3: Weight Space Merge (Baseline + Composite) ---\n"}
+,{"stream_name":"stdout","time":164.007281565,"data":"[   2.4m] Result [WSP L3: Weight Space Merge (Baseline + Composite)] (tau=0.60, area=100) -\u003e PQ: 0.28024 (SQ: 0.62168, RQ: 0.45078 | TP: 245, FP: 425, FN: 172) in 8.1s\n"}
+,{"stream_name":"stdout","time":164.007324431,"data":"[   2.4m] \n"}
+,{"stream_name":"stdout","time":164.007344935,"data":"--- Evaluating PART 7: Probability-Map Averaging Ensemble ---\n"}
+,{"stream_name":"stdout","time":175.075857158,"data":"[   2.6m] Result [Probability Map Ensemble: Baseline + Composite] -\u003e PQ: 0.28026 (SQ: 0.62172, RQ: 0.45078 | TP: 245, FP: 425, FN: 172)\n"}
+,{"stream_name":"stdout","time":175.075911172,"data":"[   2.6m] \n"}
+,{"stream_name":"stdout","time":175.075921581,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":175.075924384,"data":"[   2.6m] PART 9: THRESHOLD \u0026 AREA CALIBRATION SWEEPS\n"}
+,{"stream_name":"stdout","time":175.075926948,"data":"[   2.6m] ================================================================================\n"}
+,{"stream_name":"stdout","time":175.075929713,"data":"[   2.6m] \n"}
+,{"stream_name":"stdout","time":175.075932004,"data":"--- Threshold Sweep for Baseline (Min Area = 100) ---\n"}
+,{"stream_name":"stdout","time":187.279881781,"data":"[   2.8m]   Baseline (tau=0.45) -\u003e PQ: 0.18948 | TP:  183, FP:  585, FN:  234\n"}
+,{"stream_name":"stdout","time":199.024922863,"data":"[   3.0m]   Baseline (tau=0.50) -\u003e PQ: 0.21468 | TP:  201, FP:  534, FN:  216\n"}
+,{"stream_name":"stdout","time":210.195221993,"data":"[   3.2m]   Baseline (tau=0.55) -\u003e PQ: 0.24033 | TP:  219, FP:  487, FN:  198\n"}
+,{"stream_name":"stdout","time":221.283891804,"data":"[   3.4m]   Baseline (tau=0.60) -\u003e PQ: 0.26118 | TP:  230, FP:  450, FN:  187\n"}
+,{"stream_name":"stdout","time":231.985563229,"data":"[   3.6m]   Baseline (tau=0.65) -\u003e PQ: 0.28570 | TP:  246, FP:  417, FN:  171\n"}
+,{"stream_name":"stdout","time":242.240927824,"data":"[   3.7m]   Baseline (tau=0.70) -\u003e PQ: 0.29406 | TP:  244, FP:  393, FN:  173\n"}
+,{"stream_name":"stdout","time":242.240967924,"data":"[   3.7m] \n"}
+,{"stream_name":"stdout","time":242.240977129,"data":"--- Threshold Sweep for WSP Composite (Min Area = 100) ---\n"}
+,{"stream_name":"stdout","time":253.864880933,"data":"[   3.9m]   WSP Composite (tau=0.45) -\u003e PQ: 0.21491 | TP:  201, FP:  536, FN:  216\n"}
+,{"stream_name":"stdout","time":265.178399853,"data":"[   4.1m]   WSP Composite (tau=0.50) -\u003e PQ: 0.24164 | TP:  220, FP:  486, FN:  197\n"}
+,{"stream_name":"stdout","time":276.13780859,"data":"[   4.3m]   WSP Composite (tau=0.55) -\u003e PQ: 0.26326 | TP:  231, FP:  446, FN:  186\n"}
+,{"stream_name":"stdout","time":286.749131114,"data":"[   4.5m]   WSP Composite (tau=0.60) -\u003e PQ: 0.28766 | TP:  248, FP:  416, FN:  169\n"}
+,{"stream_name":"stdout","time":297.104953283,"data":"[   4.7m]   WSP Composite (tau=0.65) -\u003e PQ: 0.28898 | TP:  240, FP:  401, FN:  177\n"}
+,{"stream_name":"stdout","time":307.124419264,"data":"[   4.8m]   WSP Composite (tau=0.70) -\u003e PQ: 0.29995 | TP:  240, FP:  373, FN:  177\n"}
+,{"stream_name":"stdout","time":307.124468212,"data":"[   4.8m] \n"}
+,{"stream_name":"stdout","time":307.124472452,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":307.124476129,"data":"[   4.8m] MASTER RESULTS SUMMARY TABLE (Fold 0 Validation)\n"}
+,{"stream_name":"stdout","time":307.124490805,"data":"[   4.8m] ================================================================================\n"}
+,{"stream_name":"stdout","time":307.134707541,"data":"                                             name          edit_type  thresh  min_area       pq       sq       rq  tp  fp  fn  delta_pq  fp_reduction_pct\n"}
+,{"stream_name":"stdout","time":307.134731021,"data":"                    Baseline (Original EffNet-B0)           baseline     0.6       100 0.261179 0.622855 0.419325 230 450 187  0.000000          0.000000\n"}
+,{"stream_name":"stdout","time":307.13473433,"data":"                 WSP L1: Bias Realignment (-0.15)    WSP_L1_bias_m15     0.6       100 0.281393 0.623659 0.451197 245 424 172  0.020214          5.777778\n"}
+,{"stream_name":"stdout","time":307.134737185,"data":"          WSP L1: Noisy Channel Damping (Ch 4,13)  WSP_L1_damp_noisy     0.6       100 0.272650 0.621482 0.438710 238 430 179  0.011471          4.444444\n"}
+,{"stream_name":"stdout","time":307.134739915,"data":"         WSP L1: Inhibitory Amplification (x1.15) WSP_L1_boost_inhib     0.6       100 0.265771 0.622971 0.426618 234 446 183  0.004592          0.888889\n"}
+,{"stream_name":"stdout","time":307.134742595,"data":"                   WSP L1: Composite Head Surgery   WSP_L1_composite     0.6       100 0.287663 0.626943 0.458834 248 416 169  0.026484          7.555556\n"}
+,{"stream_name":"stdout","time":307.134745261,"data":"             WSP L2: SVD Rank-14 Noise Truncation   WSP_L2_svd_trunc     0.6       100 0.123522 0.547616 0.225564 120 527 297 -0.137657        -17.111111\n"}
+,{"stream_name":"stdout","time":307.134747893,"data":"WSP L3: Weight Space Merge (Baseline + Composite)   WSP_weight_merge     0.6       100 0.280240 0.621676 0.450782 245 425 172  0.019061          5.555556\n"}
+,{"stream_name":"stdout","time":307.134750477,"data":"  Probability Map Ensemble (Baseline + Composite)  ensemble_prob_map     0.6       100 0.280262 0.621723 0.450782 245 425 172  0.019083          5.555556\n"}
+,{"stream_name":"stdout","time":307.212236816,"data":"[   4.8m] Exported champion edited checkpoint to /kaggle/working/wsp_champion_fold0.pt\n"}
+,{"stream_name":"stdout","time":307.212809562,"data":"[   4.8m] Saved full JSON report to /kaggle/working/wsp_evaluation_results.json\n"}
+,{"stream_name":"stdout","time":307.212822859,"data":"[   4.8m] WEIGHT-SPACE PROGRAMMING EXPERIMENT EXECUTION COMPLETED.\n"}
+,{"stream_name":"stderr","time":315.424929446,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":315.424960414,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":315.705604761,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":315.705628778,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":316.598147253,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":317.758585477,"data":"[NbConvertApp] Writing 409779 bytes to __results__.html\n"}
+]

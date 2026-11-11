@@ -1,0 +1,19 @@
+{
+  "id": "cracker1war/solar-filament-weight-space-programming",
+  "title": "Solar Filament Weight Space Programming",
+  "code_file": "wsp_experiment.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "competition_sources": [
+    "filament-segmentation-2026"
+  ],
+  "dataset_sources": [
+    "cracker1war/solar-filament-b0-checkpoint"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

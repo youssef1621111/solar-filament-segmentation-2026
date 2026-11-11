@@ -1,0 +1,1066 @@
+[
+  {
+    "ref": "spongeboimebob/run10-effv2s-fold4",
+    "title": "run10_effv2s_fold4",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-03T16:40:39.640000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run10-effv2s-fold3",
+    "title": "run10_effv2s_fold3",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-03T16:39:33.080000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run10-effv2s-fold2",
+    "title": "run10_effv2s_fold2",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-03T15:22:53.143000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run10-effv2s-fold1",
+    "title": "run10_effv2s_fold1",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-03T15:21:31.563000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e10-detector-thr3",
+    "title": "Solar e10 detector thr3",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T05:06:28.600000",
+    "totalVotes": 7
+  },
+  {
+    "ref": "robinamirbahar/solar-filament-panoptic-morphology-segmentation",
+    "title": "Solar Filament Panoptic Morphology Segmentation",
+    "author": "Robina Mirbahar",
+    "lastRunTime": "2026-10-27T05:58:05.880000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "jamesmills1975/cage-filament-u-net-example",
+    "title": "CAGE Filament U-Net Example",
+    "author": "James Mills",
+    "lastRunTime": "2026-10-21T01:40:36.137000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "pandadev0069/solar-filament-learn",
+    "title": "Solar filament Learn",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-11-02T03:06:19.650000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "mengxinlab/solar-filament-2026-reproducible-release",
+    "title": "Solar Filament 2026 Reproducible Release",
+    "author": "Xin Meng",
+    "lastRunTime": "2026-10-30T06:57:22.623000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "jianansun/filament-yolo-seed-refiner",
+    "title": "Filament YOLO Seed Refiner",
+    "author": "JiananSun",
+    "lastRunTime": "2026-10-29T06:26:21.347000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "adelouadfeul/plot-functions-for-segmentaion-and-bbox-each-img",
+    "title": "PLOT Functions for SEGMENTAION and BBOX each img  ",
+    "author": "AdelOuadfeul",
+    "lastRunTime": "2026-10-25T18:39:29.513000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e11a-native",
+    "title": "Solar e11a native",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-24T08:52:01.750000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "josngelmarrero/filament-segmentation-lb-0-34",
+    "title": "filament_segmentation | LB = 0.34",
+    "author": "Jos\u00e9 \u00c1ngel Marrero Dom\u00ednguez",
+    "lastRunTime": "2026-11-03T15:29:50.787000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "kanaluvu/sun-segment",
+    "title": "sun_segment",
+    "author": "Kh\u1ed5ng Ng\u1ecdc Anh",
+    "lastRunTime": "2026-10-20T21:20:21.897000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "spongeboimebob/run8-full-unetpp-s7",
+    "title": "run8_full_unetpp_s7",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-01T13:26:10.937000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run8-full-unetpp-s42",
+    "title": "run8_full_unetpp_s42",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-01T13:20:22.030000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run4-regularisation",
+    "title": "run4_regularisation",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-10-30T23:48:02.983000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run3-resnet18",
+    "title": "run3_resnet18",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-10-30T23:47:56.443000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/run2-1536",
+    "title": "run2_1536",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-10-31T01:40:42.437000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "goutamsharma12/heliores-aspp",
+    "title": "HelioRes-ASPP",
+    "author": "Goutam sharma",
+    "lastRunTime": "2026-10-31T14:17:06.083000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "prvsiyan/solar-filaments-pq-metric-and-pipeline-explained",
+    "title": "Solar Filaments: PQ Metric and Pipeline Explained",
+    "author": "prvsiyan",
+    "lastRunTime": "2026-10-26T19:09:07.147000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e04-postproc",
+    "title": "Solar e04 postproc",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T00:58:10.210000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "jianansun/filament-baseline-unet",
+    "title": "Filament Baseline UNet",
+    "author": "JiananSun",
+    "lastRunTime": "2026-10-23T05:15:40.680000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e08-detector-thr",
+    "title": "Solar e08 detector thr",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T03:45:21.297000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "jianansun/filament-yolo11-seg-single-stage",
+    "title": "Filament YOLO11-seg Single Stage",
+    "author": "JiananSun",
+    "lastRunTime": "2026-10-29T06:32:32.313000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e03-tta-only",
+    "title": "Solar e03 tta only",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T00:31:32.157000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e07-edgeattnet",
+    "title": "Solar e07 edgeattnet",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T03:00:33.903000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/kfolds-run",
+    "title": "kfolds_run",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-10-31T02:56:56.677000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "prvsiyan/solar-filament-pipelines-what-public-scores-show",
+    "title": "Solar Filament Pipelines: What Public Scores Show",
+    "author": "prvsiyan",
+    "lastRunTime": "2026-10-26T17:46:45.700000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e02-lower-thresh",
+    "title": "Solar e02 lower thresh",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-21T23:32:59.270000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e01-floor070",
+    "title": "Solar e01 floor070",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-21T17:06:56.733000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "goutamsharma12/solar-filament-segmentation-grandmaster",
+    "title": "solar_filament_segmentation_grandmaster",
+    "author": "Goutam sharma",
+    "lastRunTime": "2026-10-26T17:04:51.777000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "jamesmills1975/cage-filament-r5-weights-example",
+    "title": "CAGE filament r5 weights example",
+    "author": "James Mills",
+    "lastRunTime": "2026-10-20T19:11:44.423000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "mridulpandey967/solar-filament-segmentation-mag-agent-u-net",
+    "title": "Solar Filament Segmentation (Mag-Agent U\u00b2-Net)",
+    "author": "mridulpandeyxD",
+    "lastRunTime": "2026-10-19T13:12:04.953000",
+    "totalVotes": 6
+  },
+  {
+    "ref": "dariushafshar/solar-filament-u-net-oof-0-45-vs-public-0-39",
+    "title": "Solar Filament U-Net: OOF 0.45 vs Public 0.39",
+    "author": "Dariush Afshar",
+    "lastRunTime": "2026-10-17T20:59:35.137000",
+    "totalVotes": 14
+  },
+  {
+    "ref": "zohairbaloch/thin-filaments-hard-boundaries-a-u-net-study",
+    "title": "Thin Filaments, Hard Boundaries: A U-Net Study",
+    "author": "Muhammad Zohair Baloch",
+    "lastRunTime": "2026-10-25T03:43:00.073000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "prvsiyan/notebook24a4dce69e",
+    "title": "notebook24a4dce69e",
+    "author": "prvsiyan",
+    "lastRunTime": "2026-11-01T11:02:42.333000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "portiantsele/notebook1130fa61f6",
+    "title": "notebook1130fa61f6",
+    "author": "Portia Ntsele",
+    "lastRunTime": "2026-10-29T18:23:45.327000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "jakuzya/solar-filament-segmentation-unet",
+    "title": "Solar Filament Segmentation | Unet",
+    "author": "dmitry kuzmin",
+    "lastRunTime": "2026-10-16T18:22:50.363000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "kaditya12345/yolo-cgnet-lightweight-network-approach-0-31",
+    "title": "YOLO + CGNet | Lightweight Network approach | 0.31",
+    "author": "Aditya Kulkarni",
+    "lastRunTime": "2026-08-26T17:57:55.547000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "hryhoriinazarenko/filamants-resnet34",
+    "title": "Filamants ResNet34",
+    "author": "Hryhorii Nazarenko",
+    "lastRunTime": "2026-10-14T22:28:36.013000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "rushikeshpundkar/notebookebfe5fd167",
+    "title": "notebookebfe5fd167",
+    "author": "Rushikesh Pundkar",
+    "lastRunTime": "2026-10-13T02:27:30.983000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "ektarr/new-metric-solar-filament",
+    "title": "New Metric | Solar Filament",
+    "author": "Maxim",
+    "lastRunTime": "2026-08-08T17:49:57.707000",
+    "totalVotes": 18
+  },
+  {
+    "ref": "dattadhebe/solar-filament-grouped-cv-and-strategy-writeup",
+    "title": "Solar Filament Grouped CV and Strategy Writeup",
+    "author": "Datta Dhebe",
+    "lastRunTime": "2026-08-06T09:29:21.953000",
+    "totalVotes": 8
+  },
+  {
+    "ref": "pandadev0069/solar-filament-yolo26-full-res-0-36",
+    "title": "Solar Filament YOLO26 Full Res(0.36)",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-11-02T11:25:51.193000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "hamzabinbutt/solar-filament-segmentation-challenge-2026-eda",
+    "title": "Solar Filament Segmentation Challenge 2026(EDA)",
+    "author": "hamza binbutt",
+    "lastRunTime": "2026-07-28T00:00:26.010000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "muhammadshoaibaltaf/solar-filament-segmentation-solution-1",
+    "title": "Solar Filament Segmentation Solution#1",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-07-31T07:08:05.757000",
+    "totalVotes": 12
+  },
+  {
+    "ref": "tatopenn/solar-filament-segmentation-resnet-u-net-pipeline",
+    "title": "Solar Filament Segmentation: ResNet U-Net Pipeline",
+    "author": "Tato Penn",
+    "lastRunTime": "2026-09-15T06:49:05.723000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "timgluhkikh/best-score-magfilo-yolo11s-detect-crop-u-net",
+    "title": "Best Score | MAGFiLO | YOLO11s Detect \u2192 Crop U-Net",
+    "author": "Tim Gluhkikh",
+    "lastRunTime": "2026-08-16T12:50:09.523000",
+    "totalVotes": 33
+  },
+  {
+    "ref": "noob786/solar-filament-segmentation-challenge-2026",
+    "title": "Solar Filament Segmentation Challenge 2026",
+    "author": "Noob786",
+    "lastRunTime": "2026-07-13T14:06:50.643000",
+    "totalVotes": 24
+  },
+  {
+    "ref": "sorcererbi/solarfilament",
+    "title": "SolarFilament",
+    "author": "majorSeaweed",
+    "lastRunTime": "2026-08-16T10:15:42.377000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "hamzabinbutt/torchvision-s-mask-r-cnn-resnet-50-fpn-backbone",
+    "title": "TorchVision's Mask R-CNN (ResNet-50 FPN backbone),",
+    "author": "hamza binbutt",
+    "lastRunTime": "2026-07-28T23:49:49.220000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "hamzabinbutt/solar-filament-segmentation-challenge-2026-intro",
+    "title": "Solar Filament Segmentation Challenge 2026(Intro)",
+    "author": "hamza binbutt",
+    "lastRunTime": "2026-07-27T23:37:06.150000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "neeldipeshshah/lb-0-27-a-complete-deep-dive-eda-u-net",
+    "title": "LB 0.27 | A Complete Deep-Dive (EDA \u2192 U-Net",
+    "author": "Neel Dipesh shah",
+    "lastRunTime": "2026-08-18T19:27:13.823000",
+    "totalVotes": 12
+  },
+  {
+    "ref": "bipinneupane1/solar-filament-segmentation-eda",
+    "title": "Solar Filament Segmentation EDA",
+    "author": "Bipin Neupane",
+    "lastRunTime": "2026-09-06T09:15:27.520000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "srivatsavkannan/solar-filaments-batch-dice-2026",
+    "title": "Solar Filaments: Batch Dice 2026",
+    "author": "Srivatsav Kannan",
+    "lastRunTime": "2026-09-06T12:27:04.050000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "nomannic19/cv-solar-filament-mask-r-cnn-u-net-refiner",
+    "title": "[CV] Solar Filament | Mask R-CNN + U-Net Refiner",
+    "author": "Nomannic",
+    "lastRunTime": "2026-07-11T16:39:00.437000",
+    "totalVotes": 61
+  },
+  {
+    "ref": "srivatsavkannan/solar-filaments-batch-dice-cv-02",
+    "title": "Solar Filaments Batch Dice CV 02",
+    "author": "Srivatsav Kannan",
+    "lastRunTime": "2026-09-06T11:53:18.997000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "deepmalyakoley/solar-filament-segmentation-characterization",
+    "title": "Solar_filament_segmentation&characterization",
+    "author": "Deepmalya Koley",
+    "lastRunTime": "2026-09-08T17:53:13.323000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "dariushafshar/filament-pq-two-experts-agree-at-0-34",
+    "title": "Filament PQ: Two Experts Agree at 0.34",
+    "author": "Dariush Afshar",
+    "lastRunTime": "2026-10-13T06:24:09.493000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "dharun235/solar-fil-yolo-instance",
+    "title": "solar-fil-yolo-instance",
+    "author": "Dharunkumar Senthilkumar",
+    "lastRunTime": "2026-09-20T12:28:53.210000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "dimitriostsiakoulias/code-to-visualize-filaments",
+    "title": "code to visualize filaments",
+    "author": "dimitrios tsiakoulias",
+    "lastRunTime": "2026-09-14T17:44:33.150000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "juanmirod/solar-filament-2026-final-report",
+    "title": "Solar Filament 2026 - Final Report",
+    "author": "Juan Miguel Rodriguez",
+    "lastRunTime": "2026-10-09T09:14:23.197000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "aliahmed12131313/solar-filament-segmentation-challenge",
+    "title": "Solar Filament Segmentation Challenge ",
+    "author": "Ali Ahmed Ali Hammad",
+    "lastRunTime": "2026-10-01T16:55:10.617000",
+    "totalVotes": 15
+  },
+  {
+    "ref": "sivapnlr80/filament-v41-sweep-val",
+    "title": "filament v41 sweep val",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-30T02:08:24.087000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "serignemodoudiop/entrainement-filaments",
+    "title": "entrainement_filaments",
+    "author": "Serigne modou Diop",
+    "lastRunTime": "2026-09-28T23:50:47.937000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "ameypawar123456789/filament-seg-reproduce",
+    "title": "filament-seg-reproduce",
+    "author": "Amey Pawar `123456789",
+    "lastRunTime": "2026-10-07T08:41:40.160000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "xiaoleilian/hardcore-eda-filament-segmentation-2026",
+    "title": "Hardcore EDA Filament Segmentation 2026",
+    "author": "Xiaolei Lian",
+    "lastRunTime": "2026-08-19T13:42:55.180000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "lamhuy8904/solar-filament-unet-segmentation-0-55",
+    "title": "Solar Filament Unet Segmentation | 0.55+",
+    "author": "L\u00e2m Huy",
+    "lastRunTime": "2026-09-03T15:07:33.950000",
+    "totalVotes": 43
+  },
+  {
+    "ref": "jirkaborovec/filamentsegm-eda-rf-detr-seg-ptl",
+    "title": "\u2600\ufe0fFilamentSegm: EDA + RF-DETR-Seg \u26a1PTL ",
+    "author": "Jirka",
+    "lastRunTime": "2026-07-27T15:35:01.747000",
+    "totalVotes": 16
+  },
+  {
+    "ref": "foysalemonshanto/solar-filament-segmentation",
+    "title": "Solar Filament Segmentation",
+    "author": "FOYSAL",
+    "lastRunTime": "2026-07-25T16:01:09.627000",
+    "totalVotes": 16
+  },
+  {
+    "ref": "hodohabalotchikp/notebookc66249a467",
+    "title": "notebookc66249a467",
+    "author": "Hodohabalo TCHIKP",
+    "lastRunTime": "2026-10-10T11:50:43.410000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "pavloivanin/solar-filament-segmentation-2026-eda",
+    "title": "\u2600\ufe0f Solar Filament Segmentation 2026: EDA",
+    "author": "Pavlo Ivanin",
+    "lastRunTime": "2026-07-20T22:26:31.937000",
+    "totalVotes": 8
+  },
+  {
+    "ref": "pandadev0069/solar-filament-yolo26-baseline",
+    "title": "Solar Filament YOLO26 Baseline",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-10-01T09:31:09.750000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "pavloivanin/0-9-solar-filament-baseline-pipeline-u-net",
+    "title": "(0,9) Solar Filament: Baseline Pipeline (U-Net)",
+    "author": "Pavlo Ivanin",
+    "lastRunTime": "2026-07-21T12:43:39.820000",
+    "totalVotes": 54
+  },
+  {
+    "ref": "xiaoleilian/eda-for-starter-filament-segmentation-2026",
+    "title": "EDA for Starter Filament Segmentation 2026",
+    "author": "Xiaolei Lian",
+    "lastRunTime": "2026-08-23T10:40:43.323000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "phuongncn/lb-0-70-topology-safe-solar-filaments-handoff",
+    "title": "LB 0.70 | Topology-Safe Solar Filaments Handoff",
+    "author": "Fususu",
+    "lastRunTime": "2026-08-05T08:27:07.817000",
+    "totalVotes": 44
+  },
+  {
+    "ref": "muhammadshoaibaltaf/magfilo-v1-evaluation-aligned-solar-filament-s",
+    "title": "\u2600\ufe0fMAGFiLO V1 \u2014 Evaluation-Aligned Solar Filament S",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-10-20T20:23:45.867000",
+    "totalVotes": 19
+  },
+  {
+    "ref": "tushhaaarrrr/solar-filament-segmentation-2026-0-37",
+    "title": "Solar Filament Segmentation 2026 (0.37)",
+    "author": "_.tushhaaarrrr",
+    "lastRunTime": "2026-09-22T03:02:19.910000",
+    "totalVotes": 11
+  },
+  {
+    "ref": "andreipaulavets/solar-filament-exploration",
+    "title": "Solar Filament Exploration \ud83c\udf1e",
+    "author": "Andrei Paulavets",
+    "lastRunTime": "2026-07-18T23:00:00.277000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "artkomissar/please-fix-the-leaderboard",
+    "title": "\ud83e\ude79 Please fix the Leaderboard",
+    "author": "Data Shrushik",
+    "lastRunTime": "2026-07-28T01:00:55.440000",
+    "totalVotes": 54
+  },
+  {
+    "ref": "giangmamanimamani/notebookb3033d5338",
+    "title": "notebookb3033d5338",
+    "author": "Juan Perez",
+    "lastRunTime": "2026-08-24T23:32:02.973000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "jamesmills1975/cage-filament-unet-public",
+    "title": "CAGE Filament UNet Public",
+    "author": "James Mills",
+    "lastRunTime": "2026-10-11T17:44:07.207000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "srivatsavkannan/solar-filaments-full-data-refit-2026",
+    "title": "Solar Filaments: Full Data Refit 2026",
+    "author": "Srivatsav Kannan",
+    "lastRunTime": "2026-09-06T10:50:55.407000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "bang1850/solar-filament-sovereign-sota",
+    "title": "Solar Filament Sovereign SOTA",
+    "author": "\u0e18\u0e19\u0e32\u0e01\u0e23 \u0e2b\u0e32\u0e0d\u0e27\u0e07\u0e04\u0e4c",
+    "lastRunTime": "2026-10-04T04:48:53.870000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "muhammadshoaibaltaf/obb-with-rotated-crop-segmentation",
+    "title": "OBB with Rotated-Crop Segmentation",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-08-23T21:09:54.827000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "sivapnlr80/solar-filament-segmentation-improved-pipeline",
+    "title": "solar filament segmentation improved pipeline",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-10-03T13:33:38.097000",
+    "totalVotes": 7
+  },
+  {
+    "ref": "ektarr/yolo-u-net-solar-filament-segmentation",
+    "title": "YOLO + U-Net | Solar Filament Segmentation",
+    "author": "Maxim",
+    "lastRunTime": "2026-07-21T09:36:31.557000",
+    "totalVotes": 32
+  },
+  {
+    "ref": "sivapnlr80/filament-maskrcnn-kfold-v2",
+    "title": "filament maskrcnn kfold v2",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-29T15:23:09.403000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "avikdas567/solar-filament-segmentation-resnet-u-net-pipeline",
+    "title": "Solar Filament Segmentation: ResNet U-Net Pipeline",
+    "author": "Avik Das",
+    "lastRunTime": "2026-07-13T09:08:59.797000",
+    "totalVotes": 33
+  },
+  {
+    "ref": "mohammadzaidkhan2006/solar-filament-segmentation-challenge-2026",
+    "title": "solar_filament_segmentation_challenge_2026",
+    "author": "zaid2006",
+    "lastRunTime": "2026-09-28T17:05:10.257000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "topabaem/filament-v02-submission-final-001",
+    "title": "filament v02 submission final 001",
+    "author": "topabaem",
+    "lastRunTime": "2026-10-09T02:24:11.617000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sijanregmi/solar-filament-cpu-baseline-reproducible",
+    "title": "Solar Filament CPU Baseline - Reproducible",
+    "author": "Sijan Regmi",
+    "lastRunTime": "2026-09-23T16:15:50.853000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "berkutayasan/train-test-solar-filament-segmentation-sam-yolo",
+    "title": "Train/Test | Solar Filament Segmentation(SAM+YOLO)",
+    "author": "Berkutay Asan",
+    "lastRunTime": "2026-09-20T11:45:38.637000",
+    "totalVotes": 13
+  },
+  {
+    "ref": "srivatsavkannan/solar-filaments-warm-start-screens-02",
+    "title": "Solar Filaments Warm Start Screens 02",
+    "author": "Srivatsav Kannan",
+    "lastRunTime": "2026-09-06T10:35:29.873000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/filament-maskrcnn-kfold",
+    "title": "filament maskrcnn kfold",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-09T16:10:51.097000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "fernandoreateguih/fernando-reategui-herrera",
+    "title": "Fernando Reategui Herrera",
+    "author": "Fernando Arturo Reategui Herrera",
+    "lastRunTime": "2026-08-23T15:54:36.713000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/solar-filament-train-refiner",
+    "title": "solar filament train refiner",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-10-03T07:38:08.463000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "yug201/solar-filament-segmentation-basic-u-net",
+    "title": "Solar Filament Segmentation-basic-U-Net",
+    "author": "Yug Kaushik",
+    "lastRunTime": "2026-08-24T15:50:50.680000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "raghavbaheti/solar-filament-segmentation",
+    "title": "solar filament segmentation",
+    "author": "Raghav Baheti",
+    "lastRunTime": "2026-08-16T20:16:33.667000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "topabaem/filament-v02-submission-dev-002",
+    "title": "filament v02 submission dev 002",
+    "author": "topabaem",
+    "lastRunTime": "2026-10-09T01:43:42.190000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "waquarahmed1/solar-filament-1",
+    "title": "Solar filament 1",
+    "author": "WAQUAR AHMED",
+    "lastRunTime": "2026-07-31T11:48:18.913000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "rokaiyasomapti/lb-1st-solar-filament-segmentation-2026",
+    "title": "(LB 1st) Solar Filament Segmentation 2026",
+    "author": "RS",
+    "lastRunTime": "2026-07-25T15:58:28.120000",
+    "totalVotes": 69
+  },
+  {
+    "ref": "stmugiwara/filament-dummy",
+    "title": "Filament Dummy",
+    "author": "St Mugiwara",
+    "lastRunTime": "2026-08-28T15:49:54.560000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "stpeteishii/magfilo-annotation-viewer",
+    "title": "MAGFiLO Annotation Viewer",
+    "author": "stpete_ishii",
+    "lastRunTime": "2026-08-11T11:02:59.050000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "sivapnlr80/filament-maskrcnn-train",
+    "title": "filament maskrcnn train",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-09T12:25:22.287000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "waquarahmed1/hands-on-visualization",
+    "title": "Hands-on Visualization",
+    "author": "WAQUAR AHMED",
+    "lastRunTime": "2026-07-31T11:04:31.207000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "zaouiyassine/solar-filament-seg-challenge-2026-unet-ensembling",
+    "title": "Solar filament seg challenge 2026: Unet ensembling",
+    "author": "ZAOUI_Yassine",
+    "lastRunTime": "2026-07-24T13:20:16.923000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "vmerckle/simple-dark-filament-segmentation-0-46",
+    "title": "Simple Dark Filament Segmentation (0.46)",
+    "author": "Victor Merckl\u00e9",
+    "lastRunTime": "2026-07-09T13:48:22.483000",
+    "totalVotes": 11
+  },
+  {
+    "ref": "grigorii220/solar-filament-segmentation-mask-r-cnn-u-net-c",
+    "title": "Solar Filament Segmentation | Mask R-CNN + U-Net C",
+    "author": "Grigorii IU",
+    "lastRunTime": "2026-08-14T08:43:52.397000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "djkadda/notebookb25b16153c",
+    "title": "notebookb25b16153c",
+    "author": "kadda djebbar",
+    "lastRunTime": "2026-07-19T05:04:49.077000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "realtalhacelik/solar-filaments-u-net-baseline",
+    "title": "Solar Filaments: U-Net++ Baseline \u2600\ufe0f",
+    "author": "Talha Celik",
+    "lastRunTime": "2026-07-18T15:58:19.290000",
+    "totalVotes": 33
+  },
+  {
+    "ref": "ruhul20/solar-segmentation-u-net-efficientnet-b4",
+    "title": "Solar Segmentation U-Net++ / EfficientNet-B4",
+    "author": "Ruhul Amin",
+    "lastRunTime": "2026-09-01T09:25:58.013000",
+    "totalVotes": 10
+  },
+  {
+    "ref": "watchaponwongapinya/solar-filament-segmentation-challenge-2026-unet",
+    "title": "solar-filament-segmentation-challenge-2026-unet",
+    "author": "Nutkub4",
+    "lastRunTime": "2026-09-12T15:00:33.783000",
+    "totalVotes": 7
+  },
+  {
+    "ref": "koushikkumardinda/solar-filament-segmentation-2026-edgeattnet",
+    "title": "\u2600\ufe0f Solar Filament Segmentation 2026: EdgeAttNet ",
+    "author": "KOUSHIK KUMAR DINDA",
+    "lastRunTime": "2026-10-28T00:21:19.830000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "anthonytherrien/magfilo-blended-tile-u-net-for-solar-filaments",
+    "title": "MAGFiLO: Blended-Tile U-Net for Solar Filaments",
+    "author": "AnthonyTherrien",
+    "lastRunTime": "2026-08-25T11:30:54.857000",
+    "totalVotes": 12
+  },
+  {
+    "ref": "brunammsaraiva/self-evaluation-notebook",
+    "title": "Self_Evaluation_Notebook",
+    "author": "BRUNA MARCELLY DE MENEZES SARAIVA",
+    "lastRunTime": "2026-11-04T14:32:44.017000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/notebook381486e152",
+    "title": "notebook381486e152",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-02T20:41:31.003000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/notebook8982669fcd",
+    "title": "notebook8982669fcd",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-01T00:23:39.643000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "spongeboimebob/swweapa",
+    "title": "swweapA",
+    "author": "Spongeboi",
+    "lastRunTime": "2026-11-01T00:19:35.813000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "ranjeet258/solar-filaments-cross-model-consensus-v2",
+    "title": "Solar Filaments - Cross-model Consensus V2",
+    "author": "RanJeet Gupta",
+    "lastRunTime": "2026-10-28T18:43:47.590000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "blueclowd/kaggle-train",
+    "title": "kaggle_train",
+    "author": "Vincent Liu",
+    "lastRunTime": "2026-11-04T12:35:44.657000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "muhammadshoaibaltaf/magfilo-v14-low-confidence-candidate-recovery-sw",
+    "title": "MAGFiLO V14 \u2014 Low-Confidence Candidate Recovery Sw",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-10-25T14:56:37.553000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "muhammadshoaibaltaf/magfilo-v12-detector-aware-crop-fine-tuning",
+    "title": "MAGFiLO V12 \u2014 Detector-Aware Crop Fine-Tuning",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-10-23T14:24:05.067000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "muhammadshoaibaltaf/magfilo-v11-pq-optimized-inference-sub",
+    "title": "\u2600\ufe0f MAGFiLO V11 \u2014 PQ-Optimized Inference & Sub",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-10-25T06:30:04.330000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "mridulpandey967/heavy-ver-3-improved-accuracy-with-proxy-agent",
+    "title": "heavy-ver-3-improved-accuracy-with-proxy-agent",
+    "author": "mridulpandeyxD",
+    "lastRunTime": "2026-10-22T19:32:47.770000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e09-detector-thr2",
+    "title": "Solar e09 detector thr2",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T04:44:24.053000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "alessandrolsilveira/solar-e05-cldice",
+    "title": "Solar e05 cldice",
+    "author": "Alessandro La Rocca Silveira",
+    "lastRunTime": "2026-10-22T01:15:15.283000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "muhammadshoaibaltaf/magfilo-v11-inference-only-pq-experiments",
+    "title": "MAGFiLO V11 \u2014 Inference-only PQ experiments",
+    "author": "Muhammad Shoaib Altaf",
+    "lastRunTime": "2026-10-22T19:11:08.247000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "cartoonistbeard/solar-filament-unet-refiner-edge-attn",
+    "title": "Solar Filament unet refiner edge attn",
+    "author": "Arko Bera",
+    "lastRunTime": "2026-10-24T04:30:37.520000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "zohairbaloch/solar-filament-segmentation-submission",
+    "title": "Solar Filament Segmentation Submission",
+    "author": "Muhammad Zohair Baloch",
+    "lastRunTime": "2026-10-17T07:09:19.517000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "topabaem/filament-v02-disjoint-export-001",
+    "title": "filament v02 disjoint export 001",
+    "author": "topabaem",
+    "lastRunTime": "2026-10-09T03:20:47.110000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "pandadev0069/solar-filament-yolo-refine",
+    "title": "Solar Filament Yolo+Refine",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-10-04T06:14:07.623000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "pandadev0069/solar-filament-yolo26-full-res",
+    "title": "Solar Filament YOLO26 Full Res",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-10-03T05:35:55.280000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "tushhaaarrrr/solar-filament-segmentation-2026-0-40",
+    "title": "Solar Filament Segmentation 2026 (0.40)",
+    "author": "_.tushhaaarrrr",
+    "lastRunTime": "2026-09-30T09:31:28.487000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "pandadev0069/solar-filament-2026-baseline-model-u-net",
+    "title": "Solar Filament 2026 Baseline Model(U-Net)",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-10-01T01:30:25.597000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "pandadev0069/sloar-filament-segmentation-eda",
+    "title": "Sloar-Filament-Segmentation-EDA",
+    "author": "PandaDev0069",
+    "lastRunTime": "2026-09-30T06:47:45.680000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "nicolasasmann/not-a-big-fan-of-solar-fishies",
+    "title": "not a big fan of solar fishies",
+    "author": "Nicolas Asmann",
+    "lastRunTime": "2026-09-26T11:46:22.397000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "tatopenn/fork-of-solar-filament-segmentation-resnet-u-net",
+    "title": "Fork of Solar Filament Segmentation: ResNet U-Net ",
+    "author": "Tato Penn",
+    "lastRunTime": "2026-09-16T05:51:42.213000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "chotiindumati/notebook160db2fa45",
+    "title": "notebook160db2fa45",
+    "author": "CHOTI Indumati",
+    "lastRunTime": "2026-09-14T20:25:12.347000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "srivatsavkannan/solar-filaments-canonical-baseline-2026",
+    "title": "Solar Filaments: Canonical Baseline 2026",
+    "author": "Srivatsav Kannan",
+    "lastRunTime": "2026-09-06T08:52:59.417000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "iamprateek/rf-detr-baseline-submission",
+    "title": "rf-detr-baseline-submission",
+    "author": "Prateek Gupta",
+    "lastRunTime": "2026-08-28T13:36:49.223000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "payamhoveidi2/filament-recall-n1024-v2",
+    "title": "filament recall n1024-v2",
+    "author": "payam hoveidi2",
+    "lastRunTime": "2026-08-19T12:03:09.277000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/filament-v36-sweep-val",
+    "title": "filament v36 sweep val",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-15T11:02:05.393000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/filament-ensemble-sweep-val",
+    "title": "filament ensemble sweep val",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-10T13:14:10.690000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/filament-agreement-ensemble-val",
+    "title": "filament agreement ensemble val",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-10T13:00:49.580000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "sivapnlr80/filament-val-pq-eval",
+    "title": "filament val pq eval",
+    "author": "Siva Kumar",
+    "lastRunTime": "2026-08-10T12:51:06.653000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "azimahmadzadeh/self-evaluation-notebook",
+    "title": "Self_Evaluation_Notebook",
+    "author": "Azim Ahmadzadeh",
+    "lastRunTime": "2026-08-09T15:59:42.377000",
+    "totalVotes": 56
+  },
+  {
+    "ref": "prakash888kp/solar-filament-segmentation-eda-baseline-unet",
+    "title": "Solar Filament Segmentation EDA Baseline UNet",
+    "author": "Prakash k",
+    "lastRunTime": "2026-08-05T13:58:49.120000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "chaitanyajamble/solar-filament-segmentation-challenge",
+    "title": "Solar Filament Segmentation Challenge",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-07-29T03:39:20.800000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "chirags1725/notebook9a79dab7d5",
+    "title": "notebook9a79dab7d5",
+    "author": "Chirag Sharma",
+    "lastRunTime": "2026-07-26T18:15:46.797000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "rogerblue/solar-filament-segmentation-data-preprocessing",
+    "title": "Solar Filament Segmentation -data preprocessing",
+    "author": "Roger Blue",
+    "lastRunTime": "2026-08-13T10:27:59.617000",
+    "totalVotes": 0
+  }
+]

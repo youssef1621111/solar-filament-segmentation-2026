@@ -1,0 +1,42 @@
+[{"stream_name":"stdout","time":24.820940325,"data":"[  0.00m] ================================================================================\n"}
+,{"stream_name":"stdout","time":24.82103298,"data":"[  0.00m] CHAMPIONSHIP SOFT-CONSENSUS PIPELINE (0.66 LB TARGET)\n"}
+,{"stream_name":"stdout","time":24.821052029,"data":"[  0.00m] ================================================================================\n"}
+,{"stream_name":"stdout","time":25.992697137,"data":"[  0.02m] Found 180 test images in: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/test/test_images\n"}
+,{"stream_name":"stdout","time":26.187819687,"data":"[  0.02m] Initializing ResNet34 U-Net...\n"}
+,{"stream_name":"stdout","time":26.915313557,"data":"[  0.04m] Loading pretrained weights from: /kaggle/input/datasets/dariushafshar/solar-filament-unet-weights/unet_resnet34_fold3.pt\n"}
+,{"stream_name":"stdout","time":29.278891077,"data":"[  0.07m] Loading annotations JSON metadata from: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/train/MAGFiLO_1.0_Annotations_kaggle2026_train.json\n"}
+,{"stream_name":"stdout","time":29.931869476,"data":"[  0.09m] Found 1154 COCO records across 707 annotated physical stems.\n"}
+,{"stream_name":"stdout","time":62.427225858,"data":"[  0.63m] Generated 300 high-resolution 1024x1024 training patches.\n"}
+,{"stream_name":"stdout","time":62.448048273,"data":"[  0.63m] Starting Soft-Consensus Fine-Tuning (2 epochs, lr=0.0001, batch_size=4)...\n"}
+,{"stream_name":"stdout","time":104.407363326,"data":"[  1.33m] Epoch [1/2] Loss: 0.1052\n"}
+,{"stream_name":"stdout","time":143.158816076,"data":"[  1.97m] Epoch [2/2] Loss: 0.0924\n"}
+,{"stream_name":"stdout","time":143.159973691,"data":"[  1.97m] Soft-Consensus Fine-Tuning Complete.\n"}
+,{"stream_name":"stdout","time":143.34331211,"data":"[  1.98m] Executing 1024x1024 4-view TTA inference across 180 test images...\n"}
+,{"stream_name":"stdout","time":194.557863659,"data":"[  2.83m] Processed [30/180] images | Total instances: 249\n"}
+,{"stream_name":"stdout","time":245.991324951,"data":"[  3.69m] Processed [60/180] images | Total instances: 490\n"}
+,{"stream_name":"stdout","time":299.151554303,"data":"[  4.57m] Processed [90/180] images | Total instances: 808\n"}
+,{"stream_name":"stdout","time":347.961270135,"data":"[  5.39m] Processed [120/180] images | Total instances: 1024\n"}
+,{"stream_name":"stdout","time":395.645556595,"data":"[  6.18m] Processed [150/180] images | Total instances: 1126\n"}
+,{"stream_name":"stdout","time":441.758527522,"data":"[  6.95m] Processed [180/180] images | Total instances: 1235\n"}
+,{"stream_name":"stdout","time":441.790741921,"data":"[  6.95m] Initial raw predictions: 1235 instances across 175 active stems.\n"}
+,{"stream_name":"stdout","time":441.813230961,"data":"[  6.95m] Generated submission at /kaggle/working/submission.csv (1235 instances across 175 stems)\n"}
+,{"stream_name":"stdout","time":441.81325904,"data":"[  6.95m] ================================================================================\n"}
+,{"stream_name":"stdout","time":441.813266851,"data":"[  6.95m] RUNNING IN-KERNEL ZERO-TRUST 6-POINT INTEGRITY AUDIT\n"}
+,{"stream_name":"stdout","time":441.813272528,"data":"[  6.95m] ================================================================================\n"}
+,{"stream_name":"stdout","time":441.813312766,"data":"[  6.95m] [PASSED] Check 1: Column Schema strictly ['filament_id', 'segmentation_rle']\n"}
+,{"stream_name":"stdout","time":441.816483075,"data":"[  6.95m] [PASSED] Check 2: Quiet-Sun Guard (0 rows on quiet sun disks)\n"}
+,{"stream_name":"stderr","time":441.817756656,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":441.818276586,"data":"  File \"/kaggle/src/script.py\", line 560, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":441.818308358,"data":"    main()\n"}
+,{"stream_name":"stderr","time":441.818313618,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":441.818338873,"data":"  File \"/kaggle/src/script.py\", line 531, in main\n"}
+,{"stream_name":"stderr","time":441.818357631,"data":"    assert n_stems \u003e= 178, f\"Check 3 failed: stem count too low ({n_stems})\"\n"}
+,{"stream_name":"stderr","time":441.818361817,"data":"           ^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":441.818425697,"data":"AssertionError: Check 3 failed: stem count too low (175)\n"}
+,{"stream_name":"stderr","time":449.785591579,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":449.785626482,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":450.074529347,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":450.074579921,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":451.008383048,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":452.207823567,"data":"[NbConvertApp] Writing 384223 bytes to __results__.html\n"}
+]

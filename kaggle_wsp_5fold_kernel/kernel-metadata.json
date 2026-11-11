@@ -1,0 +1,19 @@
+{
+  "id": "cracker1war/solar-filament-wsp-5-fold-championship",
+  "title": "Solar Filament WSP 5-Fold Championship",
+  "code_file": "wsp_5fold_pipeline.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "competition_sources": [
+    "filament-segmentation-2026"
+  ],
+  "dataset_sources": [
+    "cracker1war/solar-filament-championship-checkpoints"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

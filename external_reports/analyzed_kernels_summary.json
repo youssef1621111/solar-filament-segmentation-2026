@@ -1,0 +1,1765 @@
+[
+  {
+    "author": "robinamirbahar",
+    "slug": "solar-filament-panoptic-morphology-segmentation",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "disjoint",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/robinamirbahar/solar-filament-panoptic-morphology-segmentation/solar-filament-panoptic-morphology-segmentation.ipynb"
+  },
+  {
+    "author": "lamhuy8904",
+    "slug": "solar-filament-unet-segmentation-0-55",
+    "models": [],
+    "resolutions": [
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "disjoint"
+    ],
+    "path": "downloaded_kernels/lamhuy8904/solar-filament-unet-segmentation-0-55/solar-filament-unet-segmentation-0-55.ipynb"
+  },
+  {
+    "author": "noob786",
+    "slug": "solar-filament-segmentation-challenge-2026",
+    "models": [
+      "yolo11"
+    ],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/noob786/solar-filament-segmentation-challenge-2026/solar-filament-segmentation-challenge-2026.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run8-full-unetpp-s42",
+    "models": [
+      "resnet18",
+      "unet",
+      "unetplusplus"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "focal",
+      "lovasz",
+      "tversky"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/run8-full-unetpp-s42/run8-full-unetpp-s42.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run4-regularisation",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/run4-regularisation/run4-regularisation.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "kfolds-run",
+    "models": [
+      "resnet18",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/kfolds-run/kfolds-run.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run10-effv2s-fold4",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/spongeboimebob/run10-effv2s-fold4/run10-effv2s-fold4.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run10-effv2s-fold1",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/spongeboimebob/run10-effv2s-fold1/run10-effv2s-fold1.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run3-resnet18",
+    "models": [
+      "resnet18",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/run3-resnet18/run3-resnet18.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run2-1536",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "1536",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/run2-1536/run2-1536.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run8-full-unetpp-s7",
+    "models": [
+      "resnet18",
+      "unet",
+      "unetplusplus"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "focal",
+      "lovasz",
+      "tversky"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/spongeboimebob/run8-full-unetpp-s7/run8-full-unetpp-s7.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run10-effv2s-fold2",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/spongeboimebob/run10-effv2s-fold2/run10-effv2s-fold2.ipynb"
+  },
+  {
+    "author": "spongeboimebob",
+    "slug": "run10-effv2s-fold3",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/spongeboimebob/run10-effv2s-fold3/run10-effv2s-fold3.ipynb"
+  },
+  {
+    "author": "deepmalyakoley",
+    "slug": "solar-filament-segmentation-characterization",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "cldice",
+      "focal"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/deepmalyakoley/solar-filament-segmentation-characterization/solar-filament-segmentation-characterization.ipynb"
+  },
+  {
+    "author": "kanaluvu",
+    "slug": "sun-segment",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "erosion"
+    ],
+    "path": "downloaded_kernels/kanaluvu/sun-segment/sun-segment.ipynb"
+  },
+  {
+    "author": "dharun235",
+    "slug": "solar-fil-yolo-instance",
+    "models": [
+      "yolov8"
+    ],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/dharun235/solar-fil-yolo-instance/solar-fil-yolo-instance.ipynb"
+  },
+  {
+    "author": "portiantsele",
+    "slug": "notebook1130fa61f6",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/portiantsele/notebook1130fa61f6/notebook1130fa61f6.ipynb"
+  },
+  {
+    "author": "yug201",
+    "slug": "solar-filament-segmentation-basic-u-net",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/yug201/solar-filament-segmentation-basic-u-net/solar-filament-segmentation-basic-u-net.ipynb"
+  },
+  {
+    "author": "andreipaulavets",
+    "slug": "solar-filament-exploration",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/andreipaulavets/solar-filament-exploration/solar-filament-exploration.ipynb"
+  },
+  {
+    "author": "stpeteishii",
+    "slug": "magfilo-annotation-viewer",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/stpeteishii/magfilo-annotation-viewer/magfilo-annotation-viewer.ipynb"
+  },
+  {
+    "author": "rushikeshpundkar",
+    "slug": "notebookebfe5fd167",
+    "models": [],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "focal",
+      "lovasz"
+    ],
+    "post": [
+      "nms",
+      "tta"
+    ],
+    "path": "downloaded_kernels/rushikeshpundkar/notebookebfe5fd167/notebookebfe5fd167.ipynb"
+  },
+  {
+    "author": "neeldipeshshah",
+    "slug": "lb-0-27-a-complete-deep-dive-eda-u-net",
+    "models": [
+      "deeplabv3",
+      "segformer",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "focal",
+      "tversky"
+    ],
+    "post": [
+      "disjoint",
+      "erosion",
+      "skeleton"
+    ],
+    "path": "downloaded_kernels/neeldipeshshah/lb-0-27-a-complete-deep-dive-eda-u-net/lb-0-27-a-complete-deep-dive-eda-u-net.ipynb"
+  },
+  {
+    "author": "hamzabinbutt",
+    "slug": "torchvision-s-mask-r-cnn-resnet-50-fpn-backbone",
+    "models": [
+      "fpn",
+      "maskrcnn"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/hamzabinbutt/torchvision-s-mask-r-cnn-resnet-50-fpn-backbone/torchvision-s-mask-r-cnn-resnet-50-fpn-backbone.ipynb"
+  },
+  {
+    "author": "hamzabinbutt",
+    "slug": "solar-filament-segmentation-challenge-2026-eda",
+    "models": [
+      "fpn"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "boundary",
+      "dice",
+      "focal"
+    ],
+    "post": [
+      "nms"
+    ],
+    "path": "downloaded_kernels/hamzabinbutt/solar-filament-segmentation-challenge-2026-eda/solar-filament-segmentation-challenge-2026-eda.ipynb"
+  },
+  {
+    "author": "hamzabinbutt",
+    "slug": "solar-filament-segmentation-challenge-2026-intro",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/hamzabinbutt/solar-filament-segmentation-challenge-2026-intro/solar-filament-segmentation-challenge-2026-intro.ipynb"
+  },
+  {
+    "author": "ektarr",
+    "slug": "yolo-u-net-solar-filament-segmentation",
+    "models": [
+      "resnet18",
+      "unet",
+      "yolo11"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/ektarr/yolo-u-net-solar-filament-segmentation/yolo-u-net-solar-filament-segmentation.ipynb"
+  },
+  {
+    "author": "ektarr",
+    "slug": "new-metric-solar-filament",
+    "models": [
+      "resnet18",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/ektarr/new-metric-solar-filament/new-metric-solar-filament.ipynb"
+  },
+  {
+    "author": "pavloivanin",
+    "slug": "0-9-solar-filament-baseline-pipeline-u-net",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/pavloivanin/0-9-solar-filament-baseline-pipeline-u-net/0-9-solar-filament-baseline-pipeline-u-net.ipynb"
+  },
+  {
+    "author": "pavloivanin",
+    "slug": "solar-filament-segmentation-2026-eda",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/pavloivanin/solar-filament-segmentation-2026-eda/solar-filament-segmentation-2026-eda.ipynb"
+  },
+  {
+    "author": "raghavbaheti",
+    "slug": "solar-filament-segmentation",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/raghavbaheti/solar-filament-segmentation/solar-filament-segmentation.ipynb"
+  },
+  {
+    "author": "serignemodoudiop",
+    "slug": "entrainement-filaments",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/serignemodoudiop/entrainement-filaments/entrainement-filaments.ipynb"
+  },
+  {
+    "author": "tatopenn",
+    "slug": "solar-filament-segmentation-resnet-u-net-pipeline",
+    "models": [
+      "resnet34"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "focal"
+    ],
+    "post": [
+      "min_area"
+    ],
+    "path": "downloaded_kernels/tatopenn/solar-filament-segmentation-resnet-u-net-pipeline/solar-filament-segmentation-resnet-u-net-pipeline.ipynb"
+  },
+  {
+    "author": "mohammadzaidkhan2006",
+    "slug": "solar-filament-segmentation-challenge-2026",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [],
+    "losses": [
+      "bce"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/mohammadzaidkhan2006/solar-filament-segmentation-challenge-2026/solar-filament-segmentation-challenge-2026.ipynb"
+  },
+  {
+    "author": "berkutayasan",
+    "slug": "train-test-solar-filament-segmentation-sam-yolo",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "boundary"
+    ],
+    "post": [
+      "nms"
+    ],
+    "path": "downloaded_kernels/berkutayasan/train-test-solar-filament-segmentation-sam-yolo/train-test-solar-filament-segmentation-sam-yolo.ipynb"
+  },
+  {
+    "author": "foysalemonshanto",
+    "slug": "solar-filament-segmentation",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/foysalemonshanto/solar-filament-segmentation/solar-filament-segmentation.ipynb"
+  },
+  {
+    "author": "pandadev0069",
+    "slug": "solar-filament-yolo26-baseline",
+    "models": [],
+    "resolutions": [],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/pandadev0069/solar-filament-yolo26-baseline/solar-filament-yolo26-baseline.ipynb"
+  },
+  {
+    "author": "pandadev0069",
+    "slug": "solar-filament-learn",
+    "models": [
+      "resnet18",
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area",
+      "nms"
+    ],
+    "path": "downloaded_kernels/pandadev0069/solar-filament-learn/solar-filament-learn.ipynb"
+  },
+  {
+    "author": "pandadev0069",
+    "slug": "solar-filament-yolo26-full-res-0-36",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/pandadev0069/solar-filament-yolo26-full-res-0-36/solar-filament-yolo26-full-res-0-36.ipynb"
+  },
+  {
+    "author": "kaditya12345",
+    "slug": "yolo-cgnet-lightweight-network-approach-0-31",
+    "models": [
+      "yolo11",
+      "yolov8"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "dilation",
+      "nms"
+    ],
+    "path": "downloaded_kernels/kaditya12345/yolo-cgnet-lightweight-network-approach-0-31/yolo-cgnet-lightweight-network-approach-0-31.ipynb"
+  },
+  {
+    "author": "phuongncn",
+    "slug": "lb-0-70-topology-safe-solar-filaments-handoff",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/phuongncn/lb-0-70-topology-safe-solar-filaments-handoff/lb-0-70-topology-safe-solar-filaments-handoff.ipynb"
+  },
+  {
+    "author": "topabaem",
+    "slug": "filament-v02-submission-dev-002",
+    "models": [
+      "fpn"
+    ],
+    "resolutions": [],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/topabaem/filament-v02-submission-dev-002/filament-v02-submission-dev-002.ipynb"
+  },
+  {
+    "author": "topabaem",
+    "slug": "filament-v02-submission-final-001",
+    "models": [
+      "fpn"
+    ],
+    "resolutions": [],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/topabaem/filament-v02-submission-final-001/filament-v02-submission-final-001.ipynb"
+  },
+  {
+    "author": "fernandoreateguih",
+    "slug": "fernando-reategui-herrera",
+    "models": [
+      "maskrcnn",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/fernandoreateguih/fernando-reategui-herrera/fernando-reategui-herrera.ipynb"
+  },
+  {
+    "author": "stmugiwara",
+    "slug": "filament-dummy",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/stmugiwara/filament-dummy/filament-dummy.ipynb"
+  },
+  {
+    "author": "dimitriostsiakoulias",
+    "slug": "code-to-visualize-filaments",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/dimitriostsiakoulias/code-to-visualize-filaments/code-to-visualize-filaments.ipynb"
+  },
+  {
+    "author": "hodohabalotchikp",
+    "slug": "notebookc66249a467",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "tversky"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/hodohabalotchikp/notebookc66249a467/notebookc66249a467.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e01-floor070",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e01-floor070/solar-e01-floor070.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e03-tta-only",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e03-tta-only/solar-e03-tta-only.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e07-edgeattnet",
+    "models": [
+      "edgeattnet",
+      "maskrcnn",
+      "resnet18",
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "cldice",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e07-edgeattnet/solar-e07-edgeattnet.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e02-lower-thresh",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e02-lower-thresh/solar-e02-lower-thresh.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e08-detector-thr",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "nms",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e08-detector-thr/solar-e08-detector-thr.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e10-detector-thr3",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "nms",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e10-detector-thr3/solar-e10-detector-thr3.ipynb"
+  },
+  {
+    "author": "alessandrolsilveira",
+    "slug": "solar-e04-postproc",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "disjoint",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/alessandrolsilveira/solar-e04-postproc/solar-e04-postproc.ipynb"
+  },
+  {
+    "author": "avikdas567",
+    "slug": "solar-filament-segmentation-resnet-u-net-pipeline",
+    "models": [
+      "resnet34"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "focal"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/avikdas567/solar-filament-segmentation-resnet-u-net-pipeline/solar-filament-segmentation-resnet-u-net-pipeline.ipynb"
+  },
+  {
+    "author": "waquarahmed1",
+    "slug": "hands-on-visualization",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/waquarahmed1/hands-on-visualization/hands-on-visualization.ipynb"
+  },
+  {
+    "author": "waquarahmed1",
+    "slug": "solar-filament-1",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/waquarahmed1/solar-filament-1/solar-filament-1.ipynb"
+  },
+  {
+    "author": "juanmirod",
+    "slug": "solar-filament-2026-final-report",
+    "models": [
+      "convnext",
+      "edgeattnet",
+      "resnet34",
+      "resnet50",
+      "segformer",
+      "unet",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1024",
+      "1280",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "dilation",
+      "disjoint",
+      "erosion",
+      "nms",
+      "tta"
+    ],
+    "path": "downloaded_kernels/juanmirod/solar-filament-2026-final-report/solar-filament-2026-final-report.ipynb"
+  },
+  {
+    "author": "tushhaaarrrr",
+    "slug": "solar-filament-segmentation-2026-0-37",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "disjoint",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/tushhaaarrrr/solar-filament-segmentation-2026-0-37/solar-filament-segmentation-2026-0-37.ipynb"
+  },
+  {
+    "author": "josngelmarrero",
+    "slug": "filament-segmentation-lb-0-34",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/josngelmarrero/filament-segmentation-lb-0-34/filament-segmentation-lb-0-34.ipynb"
+  },
+  {
+    "author": "muhammadshoaibaltaf",
+    "slug": "obb-with-rotated-crop-segmentation",
+    "models": [
+      "efficientnet-b4",
+      "unet",
+      "unetplusplus"
+    ],
+    "resolutions": [
+      "1280",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "tversky"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/muhammadshoaibaltaf/obb-with-rotated-crop-segmentation/obb-with-rotated-crop-segmentation.ipynb"
+  },
+  {
+    "author": "muhammadshoaibaltaf",
+    "slug": "magfilo-v1-evaluation-aligned-solar-filament-s",
+    "models": [
+      "efficientnet-b4",
+      "unet",
+      "unetplusplus",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1280",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "tversky"
+    ],
+    "post": [
+      "nms"
+    ],
+    "path": "downloaded_kernels/muhammadshoaibaltaf/magfilo-v1-evaluation-aligned-solar-filament-s/magfilo-v1-evaluation-aligned-solar-filament-s.ipynb"
+  },
+  {
+    "author": "muhammadshoaibaltaf",
+    "slug": "solar-filament-segmentation-solution-1",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/muhammadshoaibaltaf/solar-filament-segmentation-solution-1/solar-filament-segmentation-solution-1.ipynb"
+  },
+  {
+    "author": "bang1850",
+    "slug": "solar-filament-sovereign-sota",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/bang1850/solar-filament-sovereign-sota/solar-filament-sovereign-sota.ipynb"
+  },
+  {
+    "author": "jakuzya",
+    "slug": "solar-filament-segmentation-unet",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/jakuzya/solar-filament-segmentation-unet/solar-filament-segmentation-unet.ipynb"
+  },
+  {
+    "author": "bipinneupane1",
+    "slug": "solar-filament-segmentation-eda",
+    "models": [],
+    "resolutions": [],
+    "losses": [
+      "boundary"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/bipinneupane1/solar-filament-segmentation-eda/solar-filament-segmentation-eda.ipynb"
+  },
+  {
+    "author": "aliahmed12131313",
+    "slug": "solar-filament-segmentation-challenge",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/aliahmed12131313/solar-filament-segmentation-challenge/solar-filament-segmentation-challenge.ipynb"
+  },
+  {
+    "author": "xiaoleilian",
+    "slug": "eda-for-starter-filament-segmentation-2026",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "disjoint",
+      "min_area",
+      "nms"
+    ],
+    "path": "downloaded_kernels/xiaoleilian/eda-for-starter-filament-segmentation-2026/eda-for-starter-filament-segmentation-2026.ipynb"
+  },
+  {
+    "author": "xiaoleilian",
+    "slug": "hardcore-eda-filament-segmentation-2026",
+    "models": [
+      "edgeattnet"
+    ],
+    "resolutions": [
+      "1024",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "tversky"
+    ],
+    "post": [
+      "connectedcomponents",
+      "disjoint",
+      "min_area",
+      "nms",
+      "tta"
+    ],
+    "path": "downloaded_kernels/xiaoleilian/hardcore-eda-filament-segmentation-2026/hardcore-eda-filament-segmentation-2026.ipynb"
+  },
+  {
+    "author": "jirkaborovec",
+    "slug": "filamentsegm-eda-rf-detr-seg-ptl",
+    "models": [
+      "resnet18"
+    ],
+    "resolutions": [
+      "2048",
+      "512",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "dilation",
+      "tta"
+    ],
+    "path": "downloaded_kernels/jirkaborovec/filamentsegm-eda-rf-detr-seg-ptl/filamentsegm-eda-rf-detr-seg-ptl.ipynb"
+  },
+  {
+    "author": "dariushafshar",
+    "slug": "solar-filament-u-net-oof-0-45-vs-public-0-39",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "disjoint",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/dariushafshar/solar-filament-u-net-oof-0-45-vs-public-0-39/solar-filament-u-net-oof-0-45-vs-public-0-39.ipynb"
+  },
+  {
+    "author": "dariushafshar",
+    "slug": "filament-pq-two-experts-agree-at-0-34",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "disjoint",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/dariushafshar/filament-pq-two-experts-agree-at-0-34/filament-pq-two-experts-agree-at-0-34.ipynb"
+  },
+  {
+    "author": "sijanregmi",
+    "slug": "solar-filament-cpu-baseline-reproducible",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/sijanregmi/solar-filament-cpu-baseline-reproducible/solar-filament-cpu-baseline-reproducible.ipynb"
+  },
+  {
+    "author": "rokaiyasomapti",
+    "slug": "lb-1st-solar-filament-segmentation-2026",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents"
+    ],
+    "path": "downloaded_kernels/rokaiyasomapti/lb-1st-solar-filament-segmentation-2026/lb-1st-solar-filament-segmentation-2026.ipynb"
+  },
+  {
+    "author": "jamesmills1975",
+    "slug": "cage-filament-r5-weights-example",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "1024"
+    ],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/jamesmills1975/cage-filament-r5-weights-example/cage-filament-r5-weights-example.ipynb"
+  },
+  {
+    "author": "jamesmills1975",
+    "slug": "cage-filament-u-net-example",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "connectedcomponents",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/jamesmills1975/cage-filament-u-net-example/cage-filament-u-net-example.ipynb"
+  },
+  {
+    "author": "hryhoriinazarenko",
+    "slug": "filamants-resnet34",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "focal",
+      "tversky"
+    ],
+    "post": [
+      "connectedcomponents",
+      "tta"
+    ],
+    "path": "downloaded_kernels/hryhoriinazarenko/filamants-resnet34/filamants-resnet34.ipynb"
+  },
+  {
+    "author": "mengxinlab",
+    "slug": "solar-filament-2026-reproducible-release",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/mengxinlab/solar-filament-2026-reproducible-release/solar-filament-2026-reproducible-release.ipynb"
+  },
+  {
+    "author": "adelouadfeul",
+    "slug": "plot-functions-for-segmentaion-and-bbox-each-img",
+    "models": [],
+    "resolutions": [],
+    "losses": [],
+    "post": [],
+    "path": "downloaded_kernels/adelouadfeul/plot-functions-for-segmentaion-and-bbox-each-img/plot-functions-for-segmentaion-and-bbox-each-img.ipynb"
+  },
+  {
+    "author": "timgluhkikh",
+    "slug": "best-score-magfilo-yolo11s-detect-crop-u-net",
+    "models": [
+      "resnet34",
+      "unet",
+      "yolo11",
+      "yolov8"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/timgluhkikh/best-score-magfilo-yolo11s-detect-crop-u-net/best-score-magfilo-yolo11s-detect-crop-u-net.ipynb"
+  },
+  {
+    "author": "artkomissar",
+    "slug": "please-fix-the-leaderboard",
+    "models": [],
+    "resolutions": [
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/artkomissar/please-fix-the-leaderboard/please-fix-the-leaderboard.ipynb"
+  },
+  {
+    "author": "prvsiyan",
+    "slug": "solar-filament-pipelines-what-public-scores-show",
+    "models": [
+      "fpn",
+      "resnet18",
+      "resnet34",
+      "resnet50"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "tta"
+    ],
+    "path": "downloaded_kernels/prvsiyan/solar-filament-pipelines-what-public-scores-show/solar-filament-pipelines-what-public-scores-show.ipynb"
+  },
+  {
+    "author": "prvsiyan",
+    "slug": "notebook24a4dce69e",
+    "models": [
+      "fpn",
+      "unet"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "disjoint"
+    ],
+    "path": "downloaded_kernels/prvsiyan/notebook24a4dce69e/notebook24a4dce69e.ipynb"
+  },
+  {
+    "author": "prvsiyan",
+    "slug": "solar-filaments-pq-metric-and-pipeline-explained",
+    "models": [
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512"
+    ],
+    "losses": [
+      "boundary"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/prvsiyan/solar-filaments-pq-metric-and-pipeline-explained/solar-filaments-pq-metric-and-pipeline-explained.ipynb"
+  },
+  {
+    "author": "mridulpandey967",
+    "slug": "solar-filament-segmentation-mag-agent-u-net",
+    "models": [],
+    "resolutions": [
+      "2048",
+      "512",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "dilation",
+      "min_area",
+      "skeleton"
+    ],
+    "path": "downloaded_kernels/mridulpandey967/solar-filament-segmentation-mag-agent-u-net/solar-filament-segmentation-mag-agent-u-net.ipynb"
+  },
+  {
+    "author": "jianansun",
+    "slug": "filament-yolo-seed-refiner",
+    "models": [
+      "resnet34",
+      "unet",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1280",
+      "2048"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "nms",
+      "tta"
+    ],
+    "path": "downloaded_kernels/jianansun/filament-yolo-seed-refiner/filament-yolo-seed-refiner.ipynb"
+  },
+  {
+    "author": "jianansun",
+    "slug": "filament-baseline-unet",
+    "models": [
+      "resnet34",
+      "unet"
+    ],
+    "resolutions": [
+      "2048",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area"
+    ],
+    "path": "downloaded_kernels/jianansun/filament-baseline-unet/filament-baseline-unet.ipynb"
+  },
+  {
+    "author": "jianansun",
+    "slug": "filament-yolo11-seg-single-stage",
+    "models": [
+      "yolo11"
+    ],
+    "resolutions": [
+      "1280",
+      "2048"
+    ],
+    "losses": [],
+    "post": [
+      "min_area",
+      "nms"
+    ],
+    "path": "downloaded_kernels/jianansun/filament-yolo11-seg-single-stage/filament-yolo11-seg-single-stage.ipynb"
+  },
+  {
+    "author": "ameypawar123456789",
+    "slug": "filament-seg-reproduce",
+    "models": [
+      "resnet34",
+      "unet",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1024",
+      "1280",
+      "1536"
+    ],
+    "losses": [
+      "dice"
+    ],
+    "post": [
+      "min_area",
+      "nms"
+    ],
+    "path": "downloaded_kernels/ameypawar123456789/filament-seg-reproduce/filament-seg-reproduce.ipynb"
+  },
+  {
+    "author": "goutamsharma12",
+    "slug": "heliores-aspp",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "cldice",
+      "dice",
+      "focal"
+    ],
+    "post": [
+      "dilation",
+      "min_area",
+      "skeleton",
+      "tta"
+    ],
+    "path": "downloaded_kernels/goutamsharma12/heliores-aspp/heliores-aspp.ipynb"
+  },
+  {
+    "author": "goutamsharma12",
+    "slug": "solar-filament-segmentation-grandmaster",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice",
+      "focal"
+    ],
+    "post": [
+      "tta"
+    ],
+    "path": "downloaded_kernels/goutamsharma12/solar-filament-segmentation-grandmaster/solar-filament-segmentation-grandmaster.ipynb"
+  },
+  {
+    "author": "giangmamanimamani",
+    "slug": "notebookb3033d5338",
+    "models": [
+      "efficientnet-b4",
+      "unet",
+      "unetplusplus",
+      "yolo11"
+    ],
+    "resolutions": [
+      "1024",
+      "1280"
+    ],
+    "losses": [
+      "bce",
+      "dice",
+      "tversky"
+    ],
+    "post": [
+      "min_area"
+    ],
+    "path": "downloaded_kernels/giangmamanimamani/notebookb3033d5338/notebookb3033d5338.ipynb"
+  },
+  {
+    "author": "srivatsavkannan",
+    "slug": "solar-filaments-batch-dice-2026",
+    "models": [],
+    "resolutions": [
+      "1024",
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "disjoint",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/srivatsavkannan/solar-filaments-batch-dice-2026/solar-filaments-batch-dice-2026.ipynb"
+  },
+  {
+    "author": "srivatsavkannan",
+    "slug": "solar-filaments-full-data-refit-2026",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "1024"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "disjoint",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/srivatsavkannan/solar-filaments-full-data-refit-2026/solar-filaments-full-data-refit-2026.ipynb"
+  },
+  {
+    "author": "sorcererbi",
+    "slug": "solarfilament",
+    "models": [
+      "unet",
+      "yolo11"
+    ],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [
+      "connectedcomponents",
+      "min_area",
+      "tta"
+    ],
+    "path": "downloaded_kernels/sorcererbi/solarfilament/solarfilament.ipynb"
+  },
+  {
+    "author": "zohairbaloch",
+    "slug": "thin-filaments-hard-boundaries-a-u-net-study",
+    "models": [
+      "unet"
+    ],
+    "resolutions": [
+      "512"
+    ],
+    "losses": [
+      "bce",
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "disjoint",
+      "min_area",
+      "skeleton"
+    ],
+    "path": "downloaded_kernels/zohairbaloch/thin-filaments-hard-boundaries-a-u-net-study/thin-filaments-hard-boundaries-a-u-net-study.ipynb"
+  },
+  {
+    "author": "dattadhebe",
+    "slug": "solar-filament-grouped-cv-and-strategy-writeup",
+    "models": [],
+    "resolutions": [
+      "2048"
+    ],
+    "losses": [
+      "boundary",
+      "dice"
+    ],
+    "post": [
+      "erosion",
+      "tta"
+    ],
+    "path": "downloaded_kernels/dattadhebe/solar-filament-grouped-cv-and-strategy-writeup/solar-filament-grouped-cv-and-strategy-writeup.ipynb"
+  },
+  {
+    "author": "nomannic19",
+    "slug": "cv-solar-filament-mask-r-cnn-u-net-refiner",
+    "models": [
+      "maskrcnn",
+      "resnet18"
+    ],
+    "resolutions": [
+      "1024",
+      "2048",
+      "512",
+      "768"
+    ],
+    "losses": [
+      "bce",
+      "dice"
+    ],
+    "post": [],
+    "path": "downloaded_kernels/nomannic19/cv-solar-filament-mask-r-cnn-u-net-refiner/cv-solar-filament-mask-r-cnn-u-net-refiner.ipynb"
+  }
+]

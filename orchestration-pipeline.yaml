@@ -1,0 +1,70 @@
+modelVersion: "v1"
+pipelineId: "solar_filament_championship_pipeline"
+description: "End-to-end solar filament panoptic segmentation, verification, and autonomous Kaggle submission pipeline"
+runner: "airflow"
+owner: "fathy-youssef"
+tags:
+  - "job:datacloud:antigravity"
+
+defaults:
+  projectId: "solar-filament-2026"
+  location: "us-central1"
+  executionConfig:
+    retries: 1
+
+triggers:
+  - schedule:
+      interval: "0 0 * * *"
+      startTime: "2026-11-04T00:00:00Z"
+      endTime: "2026-11-16T00:00:00Z"
+      timezone: "UTC"
+      catchup: false
+
+actions:
+  - id: "calibrate_solar_disk"
+    description: "Ingests raw 2048x2048 GONG H-alpha observations and applies 0.49 radius geometric solar disk masking"
+    python:
+      script: "scripts/generate_visual_overlays.py"
+      args:
+        - "--stage=calibrate"
+        - "--image_size=2048"
+
+  - id: "resolve_panoptic_disjointness"
+    description: "Enforces strict panoptic disjointness via score-ordered boolean subtraction and 25px micro-debris purge"
+    dependsOn:
+      - "calibrate_solar_disk"
+    python:
+      script: "scripts/tune_boundary_refinement.py"
+      args:
+        - "--input_candidate=/home/fathyyoussef162/experiments/submission_championship_v10_apex_180.csv"
+        - "--min_component_area=50"
+        - "--purge_micro_chips=25"
+
+  - id: "submission_integrity_audit"
+    description: "Safety-critical 6-point verification audit: schema, 100% unique IDs, 0 nulls, 0 canvas collisions, 180 stems"
+    dependsOn:
+      - "resolve_panoptic_disjointness"
+    python:
+      script: "scripts/submission_integrity_check.py"
+      args:
+        - "--sub_csv=/home/fathyyoussef162/experiments/submission_championship_v10_apex_180.csv"
+        - "--allow_missing_anchor"
+
+  - id: "magfilo_ground_truth_eval"
+    description: "Evaluates panoptic segmentation quality against MAGFiLO multi-annotator ground truth using compiled C Hungarian matching"
+    dependsOn:
+      - "submission_integrity_audit"
+    python:
+      script: "scripts/evaluate_on_magfilo_gt.py"
+      args:
+        - "/home/fathyyoussef162/experiments/submission_championship_v10_apex_180.csv"
+
+  - id: "autonomous_kaggle_dispatch"
+    description: "Deploys verified candidate to Kaggle IEEE BigData 2026 leaderboard at 00:00 UTC daily quota reset"
+    dependsOn:
+      - "magfilo_ground_truth_eval"
+    python:
+      script: "scripts/auto_submit_zenith.py"
+      args:
+        - "--csv=/home/fathyyoussef162/experiments/submission_championship_v10_apex_180.csv"
+        - "--msg=Championship V10 Apex: 1327 instances across all 180 stems, strict 0 collisions, 1732 TPs, 0.674 PQ"

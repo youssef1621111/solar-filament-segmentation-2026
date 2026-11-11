@@ -1,0 +1,3574 @@
+{
+  "checkpoint": "efficientnet_b0_fold0.pt",
+  "sha256": "aec237584858be9c9085a68b74f6bc41103a5901fe37e2ac1daa0840c12ab490",
+  "size_bytes": 41284211,
+  "size_mb": 39.37,
+  "total_tensors": 424,
+  "total_parameters": 10281623,
+  "tensors": [
+    {
+      "name": "features.0.0.weight",
+      "shape": [
+        32,
+        3,
+        3,
+        3
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.0.1.weight",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.0.1.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.0.1.running_mean",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.0.1.running_var",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.1.0.block.0.0.weight",
+      "shape": [
+        32,
+        1,
+        3,
+        3
+      ],
+      "numel": 288,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.0.1.weight",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.0.1.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.0.1.running_mean",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.0.1.running_var",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.1.0.block.1.fc1.weight",
+      "shape": [
+        8,
+        32,
+        1,
+        1
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.1.fc1.bias",
+      "shape": [
+        8
+      ],
+      "numel": 8,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.1.fc2.weight",
+      "shape": [
+        32,
+        8,
+        1,
+        1
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.1.fc2.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.0.weight",
+      "shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "numel": 512,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.1.weight",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.1.bias",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.1.running_mean",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.1.running_var",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.1.0.block.2.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.0.block.0.0.weight",
+      "shape": [
+        96,
+        16,
+        1,
+        1
+      ],
+      "numel": 1536,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.0.1.weight",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.0.1.bias",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.0.1.running_mean",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.0.1.running_var",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.0.block.1.0.weight",
+      "shape": [
+        96,
+        1,
+        3,
+        3
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.1.1.weight",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.1.1.bias",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.1.1.running_mean",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.1.1.running_var",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.0.block.2.fc1.weight",
+      "shape": [
+        4,
+        96,
+        1,
+        1
+      ],
+      "numel": 384,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.2.fc1.bias",
+      "shape": [
+        4
+      ],
+      "numel": 4,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.2.fc2.weight",
+      "shape": [
+        96,
+        4,
+        1,
+        1
+      ],
+      "numel": 384,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.2.fc2.bias",
+      "shape": [
+        96
+      ],
+      "numel": 96,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.0.weight",
+      "shape": [
+        24,
+        96,
+        1,
+        1
+      ],
+      "numel": 2304,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.1.weight",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.1.bias",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.1.running_mean",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.1.running_var",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.1.block.0.0.weight",
+      "shape": [
+        144,
+        24,
+        1,
+        1
+      ],
+      "numel": 3456,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.0.1.weight",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.0.1.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.0.1.running_mean",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.0.1.running_var",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.1.block.1.0.weight",
+      "shape": [
+        144,
+        1,
+        3,
+        3
+      ],
+      "numel": 1296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.1.1.weight",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.1.1.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.1.1.running_mean",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.1.1.running_var",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.2.1.block.2.fc1.weight",
+      "shape": [
+        6,
+        144,
+        1,
+        1
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.2.fc1.bias",
+      "shape": [
+        6
+      ],
+      "numel": 6,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.2.fc2.weight",
+      "shape": [
+        144,
+        6,
+        1,
+        1
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.2.fc2.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.0.weight",
+      "shape": [
+        24,
+        144,
+        1,
+        1
+      ],
+      "numel": 3456,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.1.weight",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.1.bias",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.1.running_mean",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.1.running_var",
+      "shape": [
+        24
+      ],
+      "numel": 24,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.2.1.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.0.block.0.0.weight",
+      "shape": [
+        144,
+        24,
+        1,
+        1
+      ],
+      "numel": 3456,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.0.1.weight",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.0.1.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.0.1.running_mean",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.0.1.running_var",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.0.block.1.0.weight",
+      "shape": [
+        144,
+        1,
+        5,
+        5
+      ],
+      "numel": 3600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.1.1.weight",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.1.1.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.1.1.running_mean",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.1.1.running_var",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.0.block.2.fc1.weight",
+      "shape": [
+        6,
+        144,
+        1,
+        1
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.2.fc1.bias",
+      "shape": [
+        6
+      ],
+      "numel": 6,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.2.fc2.weight",
+      "shape": [
+        144,
+        6,
+        1,
+        1
+      ],
+      "numel": 864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.2.fc2.bias",
+      "shape": [
+        144
+      ],
+      "numel": 144,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.0.weight",
+      "shape": [
+        40,
+        144,
+        1,
+        1
+      ],
+      "numel": 5760,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.1.weight",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.1.bias",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.1.running_mean",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.1.running_var",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.1.block.0.0.weight",
+      "shape": [
+        240,
+        40,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.0.1.weight",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.0.1.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.0.1.running_mean",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.0.1.running_var",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.1.block.1.0.weight",
+      "shape": [
+        240,
+        1,
+        5,
+        5
+      ],
+      "numel": 6000,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.1.1.weight",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.1.1.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.1.1.running_mean",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.1.1.running_var",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.3.1.block.2.fc1.weight",
+      "shape": [
+        10,
+        240,
+        1,
+        1
+      ],
+      "numel": 2400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.2.fc1.bias",
+      "shape": [
+        10
+      ],
+      "numel": 10,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.2.fc2.weight",
+      "shape": [
+        240,
+        10,
+        1,
+        1
+      ],
+      "numel": 2400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.2.fc2.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.0.weight",
+      "shape": [
+        40,
+        240,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.1.weight",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.1.bias",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.1.running_mean",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.1.running_var",
+      "shape": [
+        40
+      ],
+      "numel": 40,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.3.1.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.0.block.0.0.weight",
+      "shape": [
+        240,
+        40,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.0.1.weight",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.0.1.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.0.1.running_mean",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.0.1.running_var",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.0.block.1.0.weight",
+      "shape": [
+        240,
+        1,
+        3,
+        3
+      ],
+      "numel": 2160,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.1.1.weight",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.1.1.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.1.1.running_mean",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.1.1.running_var",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.0.block.2.fc1.weight",
+      "shape": [
+        10,
+        240,
+        1,
+        1
+      ],
+      "numel": 2400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.2.fc1.bias",
+      "shape": [
+        10
+      ],
+      "numel": 10,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.2.fc2.weight",
+      "shape": [
+        240,
+        10,
+        1,
+        1
+      ],
+      "numel": 2400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.2.fc2.bias",
+      "shape": [
+        240
+      ],
+      "numel": 240,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.0.weight",
+      "shape": [
+        80,
+        240,
+        1,
+        1
+      ],
+      "numel": 19200,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.1.weight",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.1.bias",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.1.running_mean",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.1.running_var",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.1.block.0.0.weight",
+      "shape": [
+        480,
+        80,
+        1,
+        1
+      ],
+      "numel": 38400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.0.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.0.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.0.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.0.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.1.block.1.0.weight",
+      "shape": [
+        480,
+        1,
+        3,
+        3
+      ],
+      "numel": 4320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.1.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.1.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.1.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.1.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.1.block.2.fc1.weight",
+      "shape": [
+        20,
+        480,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.2.fc1.bias",
+      "shape": [
+        20
+      ],
+      "numel": 20,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.2.fc2.weight",
+      "shape": [
+        480,
+        20,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.2.fc2.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.0.weight",
+      "shape": [
+        80,
+        480,
+        1,
+        1
+      ],
+      "numel": 38400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.1.weight",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.1.bias",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.1.running_mean",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.1.running_var",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.1.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.2.block.0.0.weight",
+      "shape": [
+        480,
+        80,
+        1,
+        1
+      ],
+      "numel": 38400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.0.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.0.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.0.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.0.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.2.block.1.0.weight",
+      "shape": [
+        480,
+        1,
+        3,
+        3
+      ],
+      "numel": 4320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.1.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.1.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.1.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.1.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.4.2.block.2.fc1.weight",
+      "shape": [
+        20,
+        480,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.2.fc1.bias",
+      "shape": [
+        20
+      ],
+      "numel": 20,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.2.fc2.weight",
+      "shape": [
+        480,
+        20,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.2.fc2.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.0.weight",
+      "shape": [
+        80,
+        480,
+        1,
+        1
+      ],
+      "numel": 38400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.1.weight",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.1.bias",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.1.running_mean",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.1.running_var",
+      "shape": [
+        80
+      ],
+      "numel": 80,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.4.2.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.0.block.0.0.weight",
+      "shape": [
+        480,
+        80,
+        1,
+        1
+      ],
+      "numel": 38400,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.0.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.0.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.0.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.0.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.0.block.1.0.weight",
+      "shape": [
+        480,
+        1,
+        5,
+        5
+      ],
+      "numel": 12000,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.1.1.weight",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.1.1.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.1.1.running_mean",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.1.1.running_var",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.0.block.2.fc1.weight",
+      "shape": [
+        20,
+        480,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.2.fc1.bias",
+      "shape": [
+        20
+      ],
+      "numel": 20,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.2.fc2.weight",
+      "shape": [
+        480,
+        20,
+        1,
+        1
+      ],
+      "numel": 9600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.2.fc2.bias",
+      "shape": [
+        480
+      ],
+      "numel": 480,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.0.weight",
+      "shape": [
+        112,
+        480,
+        1,
+        1
+      ],
+      "numel": 53760,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.1.weight",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.1.bias",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.1.running_mean",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.1.running_var",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.1.block.0.0.weight",
+      "shape": [
+        672,
+        112,
+        1,
+        1
+      ],
+      "numel": 75264,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.0.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.0.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.0.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.0.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.1.block.1.0.weight",
+      "shape": [
+        672,
+        1,
+        5,
+        5
+      ],
+      "numel": 16800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.1.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.1.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.1.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.1.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.1.block.2.fc1.weight",
+      "shape": [
+        28,
+        672,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.2.fc1.bias",
+      "shape": [
+        28
+      ],
+      "numel": 28,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.2.fc2.weight",
+      "shape": [
+        672,
+        28,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.2.fc2.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.0.weight",
+      "shape": [
+        112,
+        672,
+        1,
+        1
+      ],
+      "numel": 75264,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.1.weight",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.1.bias",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.1.running_mean",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.1.running_var",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.1.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.2.block.0.0.weight",
+      "shape": [
+        672,
+        112,
+        1,
+        1
+      ],
+      "numel": 75264,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.0.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.0.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.0.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.0.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.2.block.1.0.weight",
+      "shape": [
+        672,
+        1,
+        5,
+        5
+      ],
+      "numel": 16800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.1.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.1.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.1.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.1.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.5.2.block.2.fc1.weight",
+      "shape": [
+        28,
+        672,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.2.fc1.bias",
+      "shape": [
+        28
+      ],
+      "numel": 28,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.2.fc2.weight",
+      "shape": [
+        672,
+        28,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.2.fc2.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.0.weight",
+      "shape": [
+        112,
+        672,
+        1,
+        1
+      ],
+      "numel": 75264,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.1.weight",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.1.bias",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.1.running_mean",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.1.running_var",
+      "shape": [
+        112
+      ],
+      "numel": 112,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.5.2.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.0.block.0.0.weight",
+      "shape": [
+        672,
+        112,
+        1,
+        1
+      ],
+      "numel": 75264,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.0.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.0.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.0.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.0.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.0.block.1.0.weight",
+      "shape": [
+        672,
+        1,
+        5,
+        5
+      ],
+      "numel": 16800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.1.1.weight",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.1.1.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.1.1.running_mean",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.1.1.running_var",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.0.block.2.fc1.weight",
+      "shape": [
+        28,
+        672,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.2.fc1.bias",
+      "shape": [
+        28
+      ],
+      "numel": 28,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.2.fc2.weight",
+      "shape": [
+        672,
+        28,
+        1,
+        1
+      ],
+      "numel": 18816,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.2.fc2.bias",
+      "shape": [
+        672
+      ],
+      "numel": 672,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.0.weight",
+      "shape": [
+        192,
+        672,
+        1,
+        1
+      ],
+      "numel": 129024,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.1.weight",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.1.bias",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.1.running_mean",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.1.running_var",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.1.block.0.0.weight",
+      "shape": [
+        1152,
+        192,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.0.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.0.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.0.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.0.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.1.block.1.0.weight",
+      "shape": [
+        1152,
+        1,
+        5,
+        5
+      ],
+      "numel": 28800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.1.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.1.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.1.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.1.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.1.block.2.fc1.weight",
+      "shape": [
+        48,
+        1152,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.2.fc1.bias",
+      "shape": [
+        48
+      ],
+      "numel": 48,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.2.fc2.weight",
+      "shape": [
+        1152,
+        48,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.2.fc2.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.0.weight",
+      "shape": [
+        192,
+        1152,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.1.weight",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.1.bias",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.1.running_mean",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.1.running_var",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.1.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.2.block.0.0.weight",
+      "shape": [
+        1152,
+        192,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.0.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.0.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.0.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.0.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.2.block.1.0.weight",
+      "shape": [
+        1152,
+        1,
+        5,
+        5
+      ],
+      "numel": 28800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.1.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.1.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.1.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.1.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.2.block.2.fc1.weight",
+      "shape": [
+        48,
+        1152,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.2.fc1.bias",
+      "shape": [
+        48
+      ],
+      "numel": 48,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.2.fc2.weight",
+      "shape": [
+        1152,
+        48,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.2.fc2.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.0.weight",
+      "shape": [
+        192,
+        1152,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.1.weight",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.1.bias",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.1.running_mean",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.1.running_var",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.2.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.3.block.0.0.weight",
+      "shape": [
+        1152,
+        192,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.0.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.0.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.0.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.0.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.3.block.1.0.weight",
+      "shape": [
+        1152,
+        1,
+        5,
+        5
+      ],
+      "numel": 28800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.1.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.1.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.1.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.1.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.6.3.block.2.fc1.weight",
+      "shape": [
+        48,
+        1152,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.2.fc1.bias",
+      "shape": [
+        48
+      ],
+      "numel": 48,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.2.fc2.weight",
+      "shape": [
+        1152,
+        48,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.2.fc2.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.0.weight",
+      "shape": [
+        192,
+        1152,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.1.weight",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.1.bias",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.1.running_mean",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.1.running_var",
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.6.3.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.7.0.block.0.0.weight",
+      "shape": [
+        1152,
+        192,
+        1,
+        1
+      ],
+      "numel": 221184,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.0.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.0.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.0.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.0.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.0.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.7.0.block.1.0.weight",
+      "shape": [
+        1152,
+        1,
+        3,
+        3
+      ],
+      "numel": 10368,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.1.1.weight",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.1.1.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.1.1.running_mean",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.1.1.running_var",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.1.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.7.0.block.2.fc1.weight",
+      "shape": [
+        48,
+        1152,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.2.fc1.bias",
+      "shape": [
+        48
+      ],
+      "numel": 48,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.2.fc2.weight",
+      "shape": [
+        1152,
+        48,
+        1,
+        1
+      ],
+      "numel": 55296,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.2.fc2.bias",
+      "shape": [
+        1152
+      ],
+      "numel": 1152,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.0.weight",
+      "shape": [
+        320,
+        1152,
+        1,
+        1
+      ],
+      "numel": 368640,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.1.weight",
+      "shape": [
+        320
+      ],
+      "numel": 320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.1.bias",
+      "shape": [
+        320
+      ],
+      "numel": 320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.1.running_mean",
+      "shape": [
+        320
+      ],
+      "numel": 320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.1.running_var",
+      "shape": [
+        320
+      ],
+      "numel": 320,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.7.0.block.3.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "features.8.0.weight",
+      "shape": [
+        1280,
+        320,
+        1,
+        1
+      ],
+      "numel": 409600,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.8.1.weight",
+      "shape": [
+        1280
+      ],
+      "numel": 1280,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.8.1.bias",
+      "shape": [
+        1280
+      ],
+      "numel": 1280,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.8.1.running_mean",
+      "shape": [
+        1280
+      ],
+      "numel": 1280,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.8.1.running_var",
+      "shape": [
+        1280
+      ],
+      "numel": 1280,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "features.8.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec4.up.weight",
+      "shape": [
+        1280,
+        640,
+        2,
+        2
+      ],
+      "numel": 3276800,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.up.bias",
+      "shape": [
+        640
+      ],
+      "numel": 640,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.0.weight",
+      "shape": [
+        256,
+        752,
+        3,
+        3
+      ],
+      "numel": 1732608,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.1.weight",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.1.bias",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.1.running_mean",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.1.running_var",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec4.conv.conv.3.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "numel": 589824,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.4.weight",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.4.bias",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.4.running_mean",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.4.running_var",
+      "shape": [
+        256
+      ],
+      "numel": 256,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec4.conv.conv.4.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec3.up.weight",
+      "shape": [
+        256,
+        128,
+        2,
+        2
+      ],
+      "numel": 131072,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.up.bias",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.0.weight",
+      "shape": [
+        128,
+        168,
+        3,
+        3
+      ],
+      "numel": 193536,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.1.weight",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.1.bias",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.1.running_mean",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.1.running_var",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec3.conv.conv.3.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "numel": 147456,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.4.weight",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.4.bias",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.4.running_mean",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.4.running_var",
+      "shape": [
+        128
+      ],
+      "numel": 128,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec3.conv.conv.4.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec2.up.weight",
+      "shape": [
+        128,
+        64,
+        2,
+        2
+      ],
+      "numel": 32768,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.up.bias",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.0.weight",
+      "shape": [
+        64,
+        88,
+        3,
+        3
+      ],
+      "numel": 50688,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.1.weight",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.1.bias",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.1.running_mean",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.1.running_var",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec2.conv.conv.3.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "numel": 36864,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.4.weight",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.4.bias",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.4.running_mean",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.4.running_var",
+      "shape": [
+        64
+      ],
+      "numel": 64,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec2.conv.conv.4.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec1.up.weight",
+      "shape": [
+        64,
+        32,
+        2,
+        2
+      ],
+      "numel": 8192,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.up.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.0.weight",
+      "shape": [
+        32,
+        48,
+        3,
+        3
+      ],
+      "numel": 13824,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.1.weight",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.1.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.1.running_mean",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.1.running_var",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "dec1.conv.conv.3.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "numel": 9216,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.4.weight",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.4.bias",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.4.running_mean",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.4.running_var",
+      "shape": [
+        32
+      ],
+      "numel": 32,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "dec1.conv.conv.4.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "final_up.weight",
+      "shape": [
+        32,
+        16,
+        2,
+        2
+      ],
+      "numel": 2048,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_up.bias",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.0.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "numel": 2304,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.1.weight",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.1.bias",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.1.running_mean",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.1.running_var",
+      "shape": [
+        16
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.1.num_batches_tracked",
+      "shape": [],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f2840>"
+    },
+    {
+      "name": "final_conv.3.weight",
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "numel": 16,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    },
+    {
+      "name": "final_conv.3.bias",
+      "shape": [
+        1
+      ],
+      "numel": 1,
+      "dtype": "<function TorchUnpickler.find_class.<locals>.<lambda> at 0x7c98f04f27a0>"
+    }
+  ]
+}

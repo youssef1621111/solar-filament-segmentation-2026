@@ -1,0 +1,25 @@
+{
+  "edit_id": "WSP_L2_svd_trunc",
+  "level": 2,
+  "title": "Level 2: Decoder Noise SVD Truncation (Rank 14 in final_conv.0)",
+  "hypothesis": "In final_conv.0.weight (16x144), the 2 lowest singular components encode high-frequency granulation noise. Truncating to rank 14 filters noise while preserving structural edges.",
+  "checkpoint_file": "WSP_L2_svd_trunc.pt",
+  "sha256": "f894922c18121388ac0e917e47cddd692c8fd5a167297113c82c1b4dcf2771af",
+  "size_bytes": 41256206,
+  "size_mb": 39.34,
+  "tensor_modifications": [
+    {
+      "tensor": "final_conv.0.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "frobenius_delta": 0.5961697101593018,
+      "orig_mean": -0.00042719635530374944,
+      "mod_mean": -0.00014579306298401207,
+      "delta_mean": 0.0002814031613525003
+    }
+  ]
+}

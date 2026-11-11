@@ -1,0 +1,82 @@
+[{"stream_name":"stdout","time":16.480453864,"data":"[   0.0m] ================================================================================\n"}
+,{"stream_name":"stdout","time":16.480514876,"data":"[   0.0m] STARTING 5-FOLD WSP CHAMPIONSHIP PIPELINE (CONVNEXT-TINY + EFFNET-B0)\n"}
+,{"stream_name":"stdout","time":16.480519736,"data":"[   0.0m] ================================================================================\n"}
+,{"stream_name":"stdout","time":17.831878775,"data":"[   0.0m] Images: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/train/train_images\n"}
+,{"stream_name":"stdout","time":17.831901683,"data":"[   0.0m] Test Images: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/test/test_images\n"}
+,{"stream_name":"stdout","time":17.831904987,"data":"[   0.0m] COCO Annotations: /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/train/MAGFiLO_1.0_Annotations_kaggle2026_train.json\n"}
+,{"stream_name":"stdout","time":18.713644408,"data":"[   0.0m] Checkpoints directory: /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints\n"}
+,{"stream_name":"stdout","time":18.735603043,"data":"[   0.0m] Fold 0 Ground Truth: 417 annotations across 29 stems.\n"}
+,{"stream_name":"stdout","time":18.757148027,"data":"[   0.0m] Fold 1 Ground Truth: 477 annotations across 41 stems.\n"}
+,{"stream_name":"stdout","time":18.782863163000002,"data":"[   0.0m] Fold 2 Ground Truth: 608 annotations across 51 stems.\n"}
+,{"stream_name":"stdout","time":18.807393229,"data":"[   0.0m] Fold 3 Ground Truth: 546 annotations across 39 stems.\n"}
+,{"stream_name":"stdout","time":18.832094271,"data":"[   0.0m] Fold 4 Ground Truth: 535 annotations across 39 stems.\n"}
+,{"stream_name":"stdout","time":19.139717268,"data":"[   0.0m] \n"}
+,{"stream_name":"stdout","time":19.139762782,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":19.139767008,"data":"[   0.0m] EXPERIMENT 1: BASELINE CONVNEXT-TINY 5-FOLD EVALUATION\n"}
+,{"stream_name":"stdout","time":19.139769868,"data":"[   0.0m] ================================================================================\n"}
+,{"stream_name":"stdout","time":19.725835759,"data":"[   0.1m] Evaluating Baseline ConvNeXt-Tiny Fold 0 from /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints/convnext_tiny_fold0.pt...\n"}
+,{"stream_name":"stdout","time":52.885404798,"data":"[   0.6m] Baseline ConvNeXt Fold 0 -\u003e PQ: 0.27102 (SQ: 0.61672, RQ: 0.43946 | TP:  245, FP:  453, FN:  172) in 30.6s\n"}
+,{"stream_name":"stdout","time":52.885449174,"data":"[   0.6m] Evaluating Baseline ConvNeXt-Tiny Fold 1 from /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints/convnext_tiny_fold1.pt...\n"}
+,{"stream_name":"stdout","time":89.203029483,"data":"[   1.2m] Baseline ConvNeXt Fold 1 -\u003e PQ: 0.28800 (SQ: 0.63457, RQ: 0.45386 | TP:  300, FP:  545, FN:  177) in 34.0s\n"}
+,{"stream_name":"stdout","time":89.203088981,"data":"[   1.2m] Evaluating Baseline ConvNeXt-Tiny Fold 2 from /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints/convnext_tiny_fold2.pt...\n"}
+,{"stream_name":"stdout","time":131.40570271,"data":"[   1.9m] Baseline ConvNeXt Fold 2 -\u003e PQ: 0.27618 (SQ: 0.62818, RQ: 0.43966 | TP:  337, FP:  588, FN:  271) in 39.9s\n"}
+,{"stream_name":"stdout","time":131.405749954,"data":"[   1.9m] Evaluating Baseline ConvNeXt-Tiny Fold 3 from /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints/convnext_tiny_fold3.pt...\n"}
+,{"stream_name":"stdout","time":185.125744862,"data":"[   2.8m] Baseline ConvNeXt Fold 3 -\u003e PQ: 0.05677 (SQ: 0.59711, RQ: 0.09508 | TP:  113, FP: 1718, FN:  433) in 51.4s\n"}
+,{"stream_name":"stdout","time":185.125809289,"data":"[   2.8m] Evaluating Baseline ConvNeXt-Tiny Fold 4 from /kaggle/input/datasets/cracker1war/solar-filament-championship-checkpoints/convnext_tiny_fold4.pt...\n"}
+,{"stream_name":"stdout","time":206.375477661,"data":"[   3.2m] Baseline ConvNeXt Fold 4 -\u003e PQ: 0.00000 (SQ: 0.00000, RQ: 0.00000 | TP:    0, FP:    0, FN:  535) in 18.8s\n"}
+,{"stream_name":"stdout","time":206.614392473,"data":"[   3.2m] \n"}
+,{"stream_name":"stdout","time":206.614428243,"data":"\u003e\u003e\u003e Baseline 5-Fold OOF PQ: 0.18036 (SQ: 0.62375, RQ: 0.28916 | TP: 995, FP: 3304, FN: 1588)\n"}
+,{"stream_name":"stdout","time":206.614434069,"data":"[   3.2m] \n"}
+,{"stream_name":"stdout","time":206.614437788,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":206.614441801,"data":"[   3.2m] EXPERIMENT 2: WEIGHT-SPACE SURGERY ON PROBLEM FOLDS (FOLD 3 \u0026 FOLD 4)\n"}
+,{"stream_name":"stdout","time":206.614445596,"data":"[   3.2m] ================================================================================\n"}
+,{"stream_name":"stdout","time":206.614450433,"data":"[   3.2m] \n"}
+,{"stream_name":"stdout","time":206.614454097,"data":"--- Applying WSP Surgery to ConvNeXt-Tiny Fold 3 ---\n"}
+,{"stream_name":"stdout","time":258.610659985,"data":"[   4.0m]   Fold 3 [Base Fold 3                                  ] -\u003e PQ: 0.05677 | TP:  113, FP: 1718, FN:  433\n"}
+,{"stream_name":"stdout","time":306.749955579,"data":"[   4.8m]   Fold 3 [WSP Shift -0.15                              ] -\u003e PQ: 0.06127 | TP:  113, FP: 1540, FN:  433\n"}
+,{"stream_name":"stdout","time":352.083630264,"data":"[   5.6m]   Fold 3 [WSP Shift -0.25                              ] -\u003e PQ: 0.06360 | TP:  109, FP: 1391, FN:  437\n"}
+,{"stream_name":"stdout","time":395.51264042,"data":"[   6.3m]   Fold 3 [WSP Shift -0.35                              ] -\u003e PQ: 0.06424 | TP:  104, FP: 1281, FN:  442\n"}
+,{"stream_name":"stdout","time":440.560336131,"data":"[   7.1m]   Fold 3 [WSP Composite: Shift -0.25 + Boost Inhib x1.20] -\u003e PQ: 0.06385 | TP:  109, FP: 1384, FN:  437\n"}
+,{"stream_name":"stdout","time":440.560399936,"data":"[   7.1m] \n"}
+,{"stream_name":"stdout","time":440.560404426,"data":"--- Calibrating ConvNeXt-Tiny Fold 4 ---\n"}
+,{"stream_name":"stdout","time":462.906068797,"data":"[   7.4m]   Fold 4 (tau=0.20) -\u003e PQ: 0.00000 (SQ: 0.00000, RQ: 0.00000) | TP:    0, FP:   67, FN:  535\n"}
+,{"stream_name":"stdout","time":568.30930359,"data":"[   9.2m]   Fold 4 (tau=0.25) -\u003e PQ: 0.00763 (SQ: 0.57607, RQ: 0.01324) | TP:   41, FP: 5619, FN:  494\n"}
+,{"stream_name":"stdout","time":624.336636728,"data":"[  10.1m]   Fold 4 (tau=0.30) -\u003e PQ: 0.01864 (SQ: 0.58075, RQ: 0.03209) | TP:   60, FP: 3144, FN:  475\n"}
+,{"stream_name":"stdout","time":668.327112024,"data":"[  10.9m]   Fold 4 (tau=0.35) -\u003e PQ: 0.02981 (SQ: 0.58215, RQ: 0.05120) | TP:   78, FP: 2434, FN:  457\n"}
+,{"stream_name":"stdout","time":704.668982243,"data":"[  11.5m]   Fold 4 (tau=0.40) -\u003e PQ: 0.04296 (SQ: 0.58299, RQ: 0.07368) | TP:   98, FP: 2027, FN:  437\n"}
+,{"stream_name":"stdout","time":737.487422443,"data":"[  12.0m]   Fold 4 (tau=0.45) -\u003e PQ: 0.05259 (SQ: 0.58666, RQ: 0.08965) | TP:  110, FP: 1809, FN:  425\n"}
+,{"stream_name":"stdout","time":765.819596508,"data":"[  12.5m]   Fold 4 (tau=0.50) -\u003e PQ: 0.06069 (SQ: 0.58503, RQ: 0.10373) | TP:  114, FP: 1549, FN:  421\n"}
+,{"stream_name":"stdout","time":766.272421646,"data":"[  12.5m]   Fold 4 (tau=0.55) -\u003e PQ: 0.00000 (SQ: 0.00000, RQ: 0.00000) | TP:    0, FP:    0, FN:  535\n"}
+,{"stream_name":"stdout","time":766.725954917,"data":"[  12.5m]   Fold 4 (tau=0.60) -\u003e PQ: 0.00000 (SQ: 0.00000, RQ: 0.00000) | TP:    0, FP:    0, FN:  535\n"}
+,{"stream_name":"stdout","time":766.726005017,"data":"[  12.5m] \n"}
+,{"stream_name":"stdout","time":766.726008963,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":766.726012126,"data":"[  12.5m] EXPERIMENT 3: RECALIBRATED 5-FOLD OUT-OF-FOLD (OOF) PERFORMANCE\n"}
+,{"stream_name":"stdout","time":766.726014963,"data":"[  12.5m] ================================================================================\n"}
+,{"stream_name":"stdout","time":766.989064746,"data":"[  12.5m] \u003e\u003e\u003e RECALIBRATED 5-FOLD OOF PQ: 0.16839 (SQ: 0.61989, RQ: 0.27164 | TP: 1100, FP: 4416, FN: 1483)\n"}
+,{"stream_name":"stdout","time":766.98910081,"data":"[  12.5m] \u003e\u003e\u003e OOF PQ GAIN: -0.01198 (from 0.18036 to 0.16839)\n"}
+,{"stream_name":"stdout","time":766.989105908,"data":"[  12.5m] \n"}
+,{"stream_name":"stdout","time":766.98910948,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":766.989113154,"data":"[  12.5m] EXPERIMENT 4: MULTI-BACKBONE ENSEMBLE (WSP EFFNET-B0 + CONVNEXT-TINY)\n"}
+,{"stream_name":"stdout","time":766.989116958,"data":"[  12.5m] ================================================================================\n"}
+,{"stream_name":"stdout","time":803.64002335,"data":"[  13.1m] \u003e\u003e\u003e Multi-Backbone Ensemble (EffNet-B0 + ConvNeXt-Tiny) on Fold 0 -\u003e PQ: 0.28304 (SQ: 0.62511, RQ: 0.45280 | TP: 247, FP: 427, FN: 170)\n"}
+,{"stream_name":"stdout","time":803.640069142,"data":"[  13.1m] \n"}
+,{"stream_name":"stdout","time":803.640075603,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":803.64008086,"data":"[  13.1m] EXPERIMENT 5: COMPETITION TEST-SET INFERENCE (SAFE TILED ENSEMBLE)\n"}
+,{"stream_name":"stdout","time":803.640086302,"data":"[  13.1m] ================================================================================\n"}
+,{"stream_name":"stdout","time":803.642670119,"data":"[  13.1m] Found 180 test images in /kaggle/input/competitions/filament-segmentation-2026/MAGFiLO_1.0_Kaggle_2026/test/test_images.\n"}
+,{"stream_name":"stdout","time":886.589624707,"data":"[  14.5m] Processed 30/180 test observations in 1.3m...\n"}
+,{"stream_name":"stdout","time":969.419303228,"data":"[  15.9m] Processed 60/180 test observations in 2.7m...\n"}
+,{"stream_name":"stdout","time":1056.435179259,"data":"[  17.3m] Processed 90/180 test observations in 4.2m...\n"}
+,{"stream_name":"stdout","time":1140.348633029,"data":"[  18.7m] Processed 120/180 test observations in 5.6m...\n"}
+,{"stream_name":"stdout","time":1219.713570681,"data":"[  20.1m] Processed 150/180 test observations in 6.9m...\n"}
+,{"stream_name":"stdout","time":1299.018933765,"data":"[  21.4m] Processed 180/180 test observations in 8.2m...\n"}
+,{"stream_name":"stdout","time":1299.053752591,"data":"[  21.4m] SUCCESS: Generated competition submission at /kaggle/working/submission_wsp_championship.csv (2185 filament predictions).\n"}
+,{"stream_name":"stdout","time":1299.053984455,"data":"[  21.4m] Saved full championship summary to /kaggle/working/wsp_5fold_championship_summary.json\n"}
+,{"stream_name":"stdout","time":1299.053996236,"data":"[  21.4m] 5-FOLD WSP CHAMPIONSHIP PIPELINE COMPLETED SUCCESSFULLY.\n"}
+,{"stream_name":"stderr","time":1306.712057506,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1306.71209019,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1307.000893462,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1307.000933585,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1307.8930389,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1309.021860665,"data":"[NbConvertApp] Writing 432575 bytes to __results__.html\n"}
+]

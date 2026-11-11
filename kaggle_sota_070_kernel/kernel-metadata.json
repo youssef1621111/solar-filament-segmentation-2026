@@ -1,0 +1,19 @@
+{
+  "id": "cracker1war/solar-filament-sota-070-pipeline",
+  "title": "Solar Filament SOTA 070 Pipeline",
+  "code_file": "sota_070_pipeline.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "competition_sources": [
+    "filament-segmentation-2026"
+  ],
+  "dataset_sources": [
+    "cracker1war/solar-filament-sota-anchors"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

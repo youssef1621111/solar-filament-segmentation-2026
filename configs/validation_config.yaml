@@ -1,0 +1,55 @@
+# validation_config.yaml
+# Frozen, official validation configuration for Solar Filament Segmentation 2026
+# Phase 2 Validation Infrastructure
+
+validation:
+  version: "v1.0-official-aligned"
+  random_seed: 42
+  n_splits: 5
+  grouping_key: "stem" # Physical observation stem extracted from image file_name
+  stratification_key: "n_passes" # Number of annotator passes (1, 2, or 3)
+  
+data:
+  train_annotations_json: "/home/fathyyoussef162/data/annotations/MAGFiLO_1.0_Kaggle_2026/train/MAGFiLO_1.0_Annotations_kaggle2026_train.json"
+  manifest_csv: "/home/fathyyoussef162/data/train_folds_manifest.csv"
+  manifest_json: "/home/fathyyoussef162/data/train_folds_manifest.json"
+  total_observations: 707
+  total_image_records: 1154
+  total_instances: 8199
+  image_height: 2048
+  image_width: 2048
+
+evaluation:
+  evaluator_module: "src.eval.panoptic_quality"
+  evaluator_function: "compute_panoptic_quality_exact"
+  matching_threshold: 0.50
+  matching_operator: "greater_than" # Strict inequality: IoU > 0.50
+  reference_implementation: "downloaded_kernels/azimahmadzadeh/self-evaluation-notebook/self-evaluation-notebook.ipynb"
+  unit_tests: "tests/test_evaluator.py"
+
+fold_distribution:
+  fold_0:
+    observations: 141
+    images: 230
+    instances: 1761
+    passes: {1: 82, 2: 29, 3: 30}
+  fold_1:
+    observations: 141
+    images: 230
+    instances: 1588
+    passes: {1: 82, 2: 29, 3: 30}
+  fold_2:
+    observations: 142
+    images: 233
+    instances: 1612
+    passes: {1: 82, 2: 29, 3: 31}
+  fold_3:
+    observations: 141
+    images: 230
+    instances: 1556
+    passes: {1: 82, 2: 29, 3: 30}
+  fold_4:
+    observations: 142
+    images: 231
+    instances: 1682
+    passes: {1: 83, 2: 29, 3: 30}
