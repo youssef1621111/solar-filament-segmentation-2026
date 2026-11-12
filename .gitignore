@@ -47,3 +47,4 @@ results/weight_space_programming/edited_checkpoints/
 .kaggle/
 .env
 *token*
+.git-credentials
