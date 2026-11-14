@@ -48,3 +48,5 @@ results/weight_space_programming/edited_checkpoints/
 .env
 *token*
 .git-credentials
+
+!0.58/weights/**

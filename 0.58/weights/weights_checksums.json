@@ -1,0 +1,62 @@
+{
+  "dariush_10_unets/unet_resnet34_fold0.pt": {
+    "size": 97897763,
+    "sha256": "8cae430cf6ce34b27f129830aa193006e23ea8219b39fad482b9413c0eba9c46"
+  },
+  "dariush_10_unets/unet_resnet34_fold1.pt": {
+    "size": 97897763,
+    "sha256": "716510c722bc1bcb8a2de964f3bb306e6ec454b51a113d9f6f39e58cb0c95c11"
+  },
+  "dariush_10_unets/unet_resnet34_fold2.pt": {
+    "size": 97897763,
+    "sha256": "5fd99479706aafffa79fc5c2d9a1992d63cc8e94e2be87c47bbc535174f6ead9"
+  },
+  "dariush_10_unets/unet_resnet34_fold3.pt": {
+    "size": 97897763,
+    "sha256": "ce7d74cb1d0c3e20c2501bc6bd4a55d050cabef2391940ee5603112deb4e5007"
+  },
+  "dariush_10_unets/unet_resnet34_fold4.pt": {
+    "size": 97897763,
+    "sha256": "ef075c73fafa4aa3507e70ee14b49eb13897daf3a329e49c1a937bd65b22d27a"
+  },
+  "dariush_10_unets/unet_tu-tf_efficientnetv2_s_fold0.pt": {
+    "size": 89325371,
+    "sha256": "ce20a9a6adfba193cf8a7dc663b417d12faced974d2270a4598acf6056ce449f"
+  },
+  "dariush_10_unets/unet_tu-tf_efficientnetv2_s_fold1.pt": {
+    "size": 89325371,
+    "sha256": "801f1e9bae5726b9cb48d2e1c0780b4c3a10fffdeea6b1ba46bc9a154577c1e1"
+  },
+  "dariush_10_unets/unet_tu-tf_efficientnetv2_s_fold2.pt": {
+    "size": 89325371,
+    "sha256": "a0cbc4a19d07110dd64815ef72fb37387c2335805f6122205a6c7a984d16b2fd"
+  },
+  "dariush_10_unets/unet_tu-tf_efficientnetv2_s_fold3.pt": {
+    "size": 89325371,
+    "sha256": "3ead5c1278de4a2b8b5059e11fa12b1faae10068d1a968a9c7a384406baba74f"
+  },
+  "dariush_10_unets/unet_tu-tf_efficientnetv2_s_fold4.pt": {
+    "size": 89325371,
+    "sha256": "d33b80d2b4d62571a42287bddd89a0bac2257f3512e40f3eadcd2de09453138b"
+  },
+  "None00000_dinov3/weights/refiner/fold0.pt": {
+    "size": 139332071,
+    "sha256": "5f64fee38a42ae6875bb9a3df39d7160334d439d85995a87003de443aeb25ec7"
+  },
+  "None00000_dinov3/weights/refiner/fold1.pt": {
+    "size": 139332071,
+    "sha256": "d4b68aa48f8b2ff470acc2a5b92c46f9615ce926ff13e0a82dec338f58a20e02"
+  },
+  "None00000_dinov3/weights/refiner/fold2.pt": {
+    "size": 139332071,
+    "sha256": "fefb4604819ac0330cfdce1d664fc4c453e9325d7783288f98dc6ae388655345"
+  },
+  "None00000_dinov3/weights/refiner/fold3.pt": {
+    "size": 139332071,
+    "sha256": "ad397326abd36c9b6504c0b2cac460b031cb8606a8ec10354d796fc6497d808d"
+  },
+  "None00000_dinov3/weights/refiner/fold4.pt": {
+    "size": 139332071,
+    "sha256": "2027404bc10d066369f2198d9c52dcd327b6cb7d71fb5c59fa563909c44e8545"
+  }
+}

@@ -83,13 +83,15 @@ def run_submission_integrity_check(
     checks_passed["1. Panoptic Metric Health"] = valid_area
 
     # -------------------------------------------------------------------------
-    # Check 2: Column Schema
+    # Check 2: Column Schema & Filament ID Format
     # -------------------------------------------------------------------------
     expected_cols = ["filament_id", "segmentation_rle"]
-    check2 = (list(sub_df.columns) == expected_cols)
+    check2_cols = (list(sub_df.columns) == expected_cols)
+    check2_fids = sub_df["filament_id"].apply(lambda x: isinstance(x, str) and "_" in x and x.rsplit("_", 1)[1].isdigit()).all()
+    check2 = check2_cols and check2_fids
     checks_passed["2. Column Schema"] = check2
     status2 = "[PASSED]" if check2 else "[FAILED]"
-    print(f"Check 2: Column Schema: Columns = {list(sub_df.columns)} {status2}")
+    print(f"Check 2: Column Schema: Columns = {list(sub_df.columns)}, IDs formatted as <stem>_<int>: {check2_fids} {status2}")
 
     if not check2:
         return False
@@ -107,13 +109,13 @@ def run_submission_integrity_check(
     print(f"Check 3: Quiet-Sun Guard: {len(qs_rows)} rows on Quiet-Sun disks (Expected: strictly 0) {status3}")
 
     # -------------------------------------------------------------------------
-    # Check 4: Instance Density & Active Stem Coverage (Updated for EXP-043/044: 950 - 1350 rows)
+    # Check 4: Instance Density & Active Stem Coverage (Updated for EXP-043/044: 1000 - 1360 rows)
     # -------------------------------------------------------------------------
     total_rows = len(sub_df)
     unique_stems = stems.nunique()
     density = (total_rows / unique_stems) if unique_stems > 0 else 0
 
-    check4 = (950 <= total_rows <= 1450) and (unique_stems >= EXPECTED_ACTIVE_STEMS)
+    check4 = (1000 <= total_rows <= 1360) and (unique_stems >= EXPECTED_ACTIVE_STEMS)
     checks_passed["4. Instance Density"] = check4
     status4 = "[PASSED]" if check4 else "[FAILED]"
     print(f"Check 4: Instance Density: {total_rows} rows across {unique_stems} active stems ({density:.2f} inst/stem) {status4}")
@@ -199,11 +201,51 @@ def run_submission_integrity_check(
                 # Check 1: Severe pixel loss (>10% of anchor destroyed)
                 lost_pixels = a_anc - inter
                 if lost_pixels > 0.10 * a_anc:
-                    cannibalized_instances.append((fid, lost_pixels, a_anc, a_sub))
+                    # Check for authorized 2 -> 1 de-merging splits:
+                    # Search if candidate split instances on the same stem collectively recover >= 95% of m_anc
+                    stem_id = fid.rsplit("_", 1)[0]
+                    stem_sub_fids = [f for f in sub_df["filament_id"] if f.rsplit("_", 1)[0] == stem_id]
+                    split_union = np.zeros_like(m_anc)
+                    split_count = 0
+                    for sfid in stem_sub_fids:
+                        srle = anc_sub_map.get(sfid)
+                        if srle:
+                            try:
+                                sm = mask_util.decode({"counts": str(srle).encode("ascii"), "size": [2048, 2048]}) > 0
+                                if (sm & m_anc).sum() > 0.10 * sm.sum():
+                                    split_union |= (sm & m_anc)
+                                    split_count += 1
+                            except Exception:
+                                pass
+                    if split_count >= 2 and split_union.sum() >= 0.95 * a_anc:
+                        # Authorized 2 -> 1 de-merging split!
+                        pass
+                    else:
+                        cannibalized_instances.append((fid, lost_pixels, a_anc, a_sub))
                 
                 # Check 2: Distortion cliff (IoU with anchor < 0.60 or excessive dilation > 1.40x)
-                if iou < 0.60 or a_sub > 1.40 * a_anc:
-                    distorted_instances.append((fid, iou, a_anc, a_sub))
+                if (iou < 0.60 or a_sub > 1.40 * a_anc) and fid not in [c[0] for c in cannibalized_instances]:
+                    # If this instance was an authorized split partition, iou with the whole anchor will be lower,
+                    # but it is strictly a subset (a_sub < a_anc) and non-dilated.
+                    stem_id = fid.rsplit("_", 1)[0]
+                    stem_sub_fids = [f for f in sub_df["filament_id"] if f.rsplit("_", 1)[0] == stem_id]
+                    split_union = np.zeros_like(m_anc)
+                    split_count = 0
+                    for sfid in stem_sub_fids:
+                        srle = anc_sub_map.get(sfid)
+                        if srle:
+                            try:
+                                sm = mask_util.decode({"counts": str(srle).encode("ascii"), "size": [2048, 2048]}) > 0
+                                if (sm & m_anc).sum() > 0.10 * sm.sum():
+                                    split_union |= (sm & m_anc)
+                                    split_count += 1
+                            except Exception:
+                                pass
+                    if split_count >= 2 and split_union.sum() >= 0.95 * a_anc and a_sub <= a_anc:
+                        # Authorized split: not a distortion
+                        pass
+                    else:
+                        distorted_instances.append((fid, iou, a_anc, a_sub))
             except Exception:
                 distorted_instances.append((fid, 0.0, 0, 0))
 
