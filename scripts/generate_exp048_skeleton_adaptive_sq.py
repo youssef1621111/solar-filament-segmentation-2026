@@ -154,13 +154,22 @@ def main():
             continue
 
         grp = stem_groups[stem]
-        canvas = np.zeros(CANVAS_SHAPE, dtype=bool)
 
         decoded_items = []
         for _, row in grp.iterrows():
             fid = row["filament_id"]
             m = decode_rle(row["segmentation_rle"])
             decoded_items.append((fid, m))
+
+        # 1. Build the total original core union for this stem
+        all_orig_union = np.zeros(CANVAS_SHAPE, dtype=bool)
+        for _, m in decoded_items:
+            all_orig_union |= m
+
+        # 2. Track claimed canvas starting with all original cores
+        #    This mathematically guarantees that NO instance can ever encroach
+        #    on another instance's original core pixels (0 core erosion guaranteed).
+        claimed_canvas = all_orig_union.copy()
 
         # Stamping priority: largest instances first
         sorted_indices = sorted(range(len(decoded_items)), key=lambda i: int(decoded_items[i][1].sum()), reverse=True)
@@ -175,21 +184,23 @@ def main():
             m_cand, category, eff_width = refine_instance_skeleton_adaptive(m_orig)
             category_counts[category] = category_counts.get(category, 0) + 1
 
-            # Strict 0-collision subtraction against already stamped canvas
-            m_clean = m_cand & ~canvas
+            # Candidate expansion band wanting new background pixels:
+            # Strictly forbidden from taking any original core pixel of other instances
+            # and strictly forbidden from taking background pixels claimed by earlier expansions.
+            new_band = (m_cand & ~m_orig) & ~claimed_canvas
 
-            # Anti-cannibalization guard: ensure m_clean retains >= 99% of original core
-            core_overlap = (m_clean & m_orig).sum()
-            if core_overlap < 0.99 * a_orig:
-                m_clean = m_orig & ~canvas
+            # Final mask is mathematically guaranteed to contain 100% of m_orig
+            m_final = m_orig | new_band
 
-            a_clean = int(m_clean.sum())
-            total_area_new += a_clean
-            if a_clean > a_orig:
+            # Update claimed canvas with the newly allocated background band
+            claimed_canvas |= new_band
+
+            a_final = int(m_final.sum())
+            total_area_new += a_final
+            if a_final > a_orig:
                 expanded_count += 1
 
-            canvas |= m_clean
-            stamped_results[fid] = mask_to_rle(m_clean)
+            stamped_results[fid] = mask_to_rle(m_final)
 
         # Restore original row ordering
         for fid, _ in decoded_items:
