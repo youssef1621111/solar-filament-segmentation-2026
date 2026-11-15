@@ -27,11 +27,14 @@ import cv2
 from pycocotools import mask as mask_util
 from skimage.morphology import skeletonize
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-INPUT_058_CSV = PROJECT_ROOT / "final_submission/submission_selected_primary_058.csv"
+INPUT_058_CSV = PROJECT_ROOT / "0.58/submissions/submission_selected_primary_058.csv"
+if not INPUT_058_CSV.exists():
+    INPUT_058_CSV = PROJECT_ROOT / "final_submission/submission_selected_primary_058.csv"
 OUTPUT_CSV = PROJECT_ROOT / "final_submission/submission_exp048_skeleton_adaptive_sq.csv"
+ALT_OUTPUT_CSV = PROJECT_ROOT / "0.58/submissions/submission_exp048_skeleton_adaptive_sq.csv"
 CANVAS_SHAPE = (2048, 2048)
 QUIET_SUN_STEMS = {"20160513133714Th", "20180507140210Th"}
 
@@ -224,8 +227,10 @@ def main():
     print(f"  - Mean Area After:    {total_area_new / len(out_df):.1f} px (+{growth_pct:.2f}%)")
 
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+    ALT_OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     out_df[["filament_id", "segmentation_rle"]].to_csv(OUTPUT_CSV, index=False)
-    print(f"\n[+] Saved EXP-048 submission: '{OUTPUT_CSV}' in {time.time() - t0:.2f}s")
+    out_df[["filament_id", "segmentation_rle"]].to_csv(ALT_OUTPUT_CSV, index=False)
+    print(f"\n[+] Saved EXP-048 submission: '{OUTPUT_CSV}' and '{ALT_OUTPUT_CSV}' in {time.time() - t0:.2f}s")
     print("=" * 80)
 
 

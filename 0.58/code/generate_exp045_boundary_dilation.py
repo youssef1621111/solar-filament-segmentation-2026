@@ -24,11 +24,14 @@ import pandas as pd
 import cv2
 from pycocotools import mask as mask_util
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-PRIMARY_058_CSV = PROJECT_ROOT / "final_submission/submission_selected_primary_058.csv"
+PRIMARY_058_CSV = PROJECT_ROOT / "0.58/submissions/submission_selected_primary_058.csv"
+if not PRIMARY_058_CSV.exists():
+    PRIMARY_058_CSV = PROJECT_ROOT / "final_submission/submission_selected_primary_058.csv"
 OUTPUT_CSV = PROJECT_ROOT / "final_submission/submission_exp045_boundary_dilated.csv"
+ALT_OUTPUT_CSV = PROJECT_ROOT / "0.58/submissions/submission_exp045_boundary_dilated.csv"
 CANVAS_SHAPE = (2048, 2048)
 QUIET_SUN_STEMS = {"20160513133714Th", "20180507140210Th"}
 

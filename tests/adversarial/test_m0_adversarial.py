@@ -55,10 +55,10 @@ class TestAdversarialCollisions(unittest.TestCase):
         """Create a submission CSV with custom target rows and single-instance fillers."""
         csv_path = os.path.join(self.temp_dir.name, f"sub_{random.randint(100000, 999999)}.csv")
         rows = list(custom_rows)
-        empty_rle = "PPPP4"  # Encodes (2048, 2048) empty mask
+        filler_rle = "ZPd0:fo100000000000000000fogn3"  # Encodes (2048, 2048) 100px mask
         needed = 1350 - len(rows)
         for i in range(needed):
-            rows.append((f"filler_{i:04d}Th_1", empty_rle))
+            rows.append((f"filler_{i:04d}Th_1", filler_rle))
         df = pd.DataFrame(rows, columns=["filament_id", "segmentation_rle"])
         df.to_csv(csv_path, index=False)
         return csv_path
@@ -291,13 +291,13 @@ class TestAdversarialQuietSun(unittest.TestCase):
         self.assertFalse(run_submission_integrity_check(csv_path, allow_missing_anchor=True))
 
     def test_two_quiet_sun_instances_strict_vs_fallback(self):
-        """2 quiet sun instances: FAILS in strict mode, PASSES WITH WARNING in allow_missing_anchor mode."""
+        """2 quiet sun instances: FAILS in strict mode and in allow_missing_anchor mode."""
         csv_path = self._make_dummy_submission([
             ("20160513133714Th_1", "PPPP4"),
             ("20180507140210Th_1", "PPPP4"),
         ])
         self.assertFalse(run_submission_integrity_check(csv_path, allow_missing_anchor=False))
-        self.assertTrue(run_submission_integrity_check(csv_path, allow_missing_anchor=True))
+        self.assertFalse(run_submission_integrity_check(csv_path, allow_missing_anchor=True))
 
     def test_three_quiet_sun_instances_fails_always(self):
         """3 quiet sun instances must FAIL in BOTH modes."""
@@ -458,10 +458,13 @@ class TestAdversarialMalformedSchemasAndCLI(unittest.TestCase):
 
     def test_cli_exit_code_zero_on_valid_submission(self):
         """CLI must exit 0 on clean valid submission."""
+        valid_sub = "final_submission/submission_selected_primary_058.csv"
+        if not os.path.exists(valid_sub):
+            valid_sub = "0.58/submissions/submission_selected_primary_058.csv"
         cmd = [
             sys.executable,
             "scripts/submission_integrity_check.py",
-            "--sub_csv", "submission_original_055_anchor.csv",
+            "--sub_csv", valid_sub,
             "--allow_missing_anchor"
         ]
         res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)

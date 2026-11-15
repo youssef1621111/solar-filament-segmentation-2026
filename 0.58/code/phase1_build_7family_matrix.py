@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 from pycocotools import mask as mask_util
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 AUDIT_CSV = PROJECT_ROOT / "results/audit_1333_solo_fibril_purge.csv"

@@ -26,11 +26,14 @@ import pandas as pd
 import cv2
 from pycocotools import mask as mask_util
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-INPUT_DEMERGED_CSV = PROJECT_ROOT / "final_submission/submission_exp046_pure_demerged.csv"
+INPUT_DEMERGED_CSV = PROJECT_ROOT / "0.58/submissions/submission_exp046_pure_demerged.csv"
+if not INPUT_DEMERGED_CSV.exists():
+    INPUT_DEMERGED_CSV = PROJECT_ROOT / "final_submission/submission_exp046_pure_demerged.csv"
 OUTPUT_CSV = PROJECT_ROOT / "final_submission/submission_exp047_demerged_dilated.csv"
+ALT_OUTPUT_CSV = PROJECT_ROOT / "0.58/submissions/submission_exp047_demerged_dilated.csv"
 CANVAS_SHAPE = (2048, 2048)
 QUIET_SUN_STEMS = {"20160513133714Th", "20180507140210Th"}
 

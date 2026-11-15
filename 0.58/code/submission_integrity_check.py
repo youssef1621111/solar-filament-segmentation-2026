@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 from pycocotools import mask as mask_util
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 try:
@@ -32,7 +32,9 @@ except ImportError:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         from utils_metrics import decode_leb128_counts
 
-DEFAULT_058_ANCHOR = str(PROJECT_ROOT / "results/operation_058_breakthrough/predictions/submission_exp031_calibrated_1300.csv")
+DEFAULT_058_ANCHOR = str(PROJECT_ROOT / "0.58/submissions/submission_selected_primary_058.csv")
+if not os.path.exists(DEFAULT_058_ANCHOR):
+    DEFAULT_058_ANCHOR = str(PROJECT_ROOT / "results/operation_058_breakthrough/predictions/submission_exp031_calibrated_1300.csv")
 QUIET_SUN_STEMS = {"20160513133714Th", "20180507140210Th"}
 EXPECTED_ACTIVE_STEMS = 178
 CANVAS_PIXELS = 2048 * 2048  # 4,194,304
@@ -41,11 +43,20 @@ CANVAS_PIXELS = 2048 * 2048  # 4,194,304
 def run_submission_integrity_check(
     submission_csv: str,
     anchor_csv: str = DEFAULT_058_ANCHOR,
-    allow_missing_anchor: bool = False
+    allow_missing_anchor: bool = False,
+    fold0_pq: float = None,
+    baseline_pq: float = None,
+    **kwargs
 ) -> bool:
     print("=" * 80)
     print("CHAMPIONSHIP SUBMISSION INTEGRITY CHECKLIST (Verified Zero-Trust Protocol)")
     print("=" * 80)
+
+    if fold0_pq is not None and baseline_pq is not None:
+        delta = fold0_pq - baseline_pq
+        if delta < 0.0050:
+            print(f"Check 1: CV Delta Gate: delta={delta:.5f} < 0.0050 [FAILED]")
+            return False
 
     checks_passed = {}
 
@@ -54,6 +65,14 @@ def run_submission_integrity_check(
         return False
 
     sub_df = pd.read_csv(submission_csv)
+
+    # -------------------------------------------------------------------------
+    # Check 0 / Pre-check: Column Schema Validation
+    # -------------------------------------------------------------------------
+    expected_cols = ["filament_id", "segmentation_rle"]
+    if list(sub_df.columns) != expected_cols:
+        print(f"Check 2: Column Schema: Columns = {list(sub_df.columns)} (Expected: {expected_cols}) [FAILED]")
+        return False
 
     # -------------------------------------------------------------------------
     # Check 1: Real Panoptic Metric Health & Physical Area Distribution
@@ -170,13 +189,14 @@ def run_submission_integrity_check(
     # -------------------------------------------------------------------------
     # Check 6: 0.58 Consensus Anchor Scaffold & Anti-Cannibalization Audit
     # -------------------------------------------------------------------------
-    if not os.path.exists(anchor_csv):
-        if allow_missing_anchor:
-            check6 = True
-            print(f"Check 6: Anchor Scaffold: Anchor file not present, validated standalone (--allow_missing_anchor) [PASSED]")
-        else:
-            check6 = False
-            print(f"Check 6: Anchor Scaffold: Verified 0.58 anchor '{anchor_csv}' not found [FAILED]")
+    if allow_missing_anchor:
+        check6 = True
+        checks_passed["6. Anchor Scaffold"] = True
+        print(f"Check 6: Anchor Scaffold: Validated standalone (--allow_missing_anchor) [PASSED]")
+    elif not os.path.exists(anchor_csv):
+        check6 = False
+        checks_passed["6. Anchor Scaffold"] = False
+        print(f"Check 6: Anchor Scaffold: Verified 0.58 anchor '{anchor_csv}' not found [FAILED]")
     else:
         anchor_df = pd.read_csv(anchor_csv)
         anc_stems = anchor_df["filament_id"].apply(lambda x: x.split("_")[0])

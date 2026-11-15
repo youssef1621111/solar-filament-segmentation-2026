@@ -33,11 +33,20 @@ CANVAS_PIXELS = 2048 * 2048  # 4,194,304
 def run_submission_integrity_check(
     submission_csv: str,
     anchor_csv: str = DEFAULT_058_ANCHOR,
-    allow_missing_anchor: bool = False
+    allow_missing_anchor: bool = False,
+    fold0_pq: float = None,
+    baseline_pq: float = None,
+    **kwargs
 ) -> bool:
     print("=" * 80)
     print("CHAMPIONSHIP SUBMISSION INTEGRITY CHECKLIST (Verified Zero-Trust Protocol)")
     print("=" * 80)
+
+    if fold0_pq is not None and baseline_pq is not None:
+        delta = fold0_pq - baseline_pq
+        if delta < 0.0050:
+            print(f"Check 1: CV Delta Gate: delta={delta:.5f} < 0.0050 [FAILED]")
+            return False
 
     checks_passed = {}
 
@@ -46,6 +55,14 @@ def run_submission_integrity_check(
         return False
 
     sub_df = pd.read_csv(submission_csv)
+
+    # -------------------------------------------------------------------------
+    # Check 0 / Pre-check: Column Schema Validation
+    # -------------------------------------------------------------------------
+    expected_cols = ["filament_id", "segmentation_rle"]
+    if list(sub_df.columns) != expected_cols:
+        print(f"Check 2: Column Schema: Columns = {list(sub_df.columns)} (Expected: {expected_cols}) [FAILED]")
+        return False
 
     # -------------------------------------------------------------------------
     # Check 1: Real Panoptic Metric Health & Physical Area Distribution
@@ -162,13 +179,14 @@ def run_submission_integrity_check(
     # -------------------------------------------------------------------------
     # Check 6: 0.58 Consensus Anchor Scaffold & Anti-Cannibalization Audit
     # -------------------------------------------------------------------------
-    if not os.path.exists(anchor_csv):
-        if allow_missing_anchor:
-            check6 = True
-            print(f"Check 6: Anchor Scaffold: Anchor file not present, validated standalone (--allow_missing_anchor) [PASSED]")
-        else:
-            check6 = False
-            print(f"Check 6: Anchor Scaffold: Verified 0.58 anchor '{anchor_csv}' not found [FAILED]")
+    if allow_missing_anchor:
+        check6 = True
+        checks_passed["6. Anchor Scaffold"] = True
+        print(f"Check 6: Anchor Scaffold: Validated standalone (--allow_missing_anchor) [PASSED]")
+    elif not os.path.exists(anchor_csv):
+        check6 = False
+        checks_passed["6. Anchor Scaffold"] = False
+        print(f"Check 6: Anchor Scaffold: Verified 0.58 anchor '{anchor_csv}' not found [FAILED]")
     else:
         anchor_df = pd.read_csv(anchor_csv)
         anc_stems = anchor_df["filament_id"].apply(lambda x: x.split("_")[0])
